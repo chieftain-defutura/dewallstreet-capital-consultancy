@@ -1,5 +1,8 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
+import IdeaToProtoTypeHeader from "../../components/Service/IdeaToProtoTypeHeader";
+import InterActiveProtoType from "../../components/Service/InterActiveProtoType";
+import ApproachOurProject from "../../components/Service/ApproachOurProject";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +15,11 @@ export default function StartupUxServices() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+        <IdeaToProtoTypeHeader />
+        <InterActiveProtoType />
+        <ApproachOurProject />
+      </main>
     </>
   );
 }
