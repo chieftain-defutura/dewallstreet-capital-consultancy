@@ -1,0 +1,39 @@
+.approachOurProject {
+  background-image: url("../../../public/assets/images/circle-bg-img.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  .approachOurProjectContainer {
+    padding: 64px 0;
+    h1 {
+      font-size: 64px;
+      letter-spacing: -0.06em;
+      text-align: center;
+      font-weight: 100;
+      @media (max-width: 1024px) {
+        font-size: 42px;
+        padding: 0 32px;
+      }
+      @media (max-width: 587px) {
+        font-size: 32px;
+      }
+      @media (max-width: 425px) {
+        font-size: 28px;
+      }
+    }
+    .approachOurProjectFlexContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 32px 0;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      p {
+        cursor: pointer;
+        font-size: 24px;
+      }
+    }
+  }
+}

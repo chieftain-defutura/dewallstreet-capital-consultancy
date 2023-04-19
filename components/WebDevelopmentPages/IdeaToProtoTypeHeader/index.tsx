@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import ChevronRight from "../../public/assets/icons/chevron-right.png";
+import ChevronRight from "../../../public/assets/icons/chevron-right.png";
 import styles from "./IdeaToProtoTypeHeader.module.scss";
-import Button from "../Button";
+import Button from "../../Button";
 
 const IdeaToProtoTypeHeader: React.FC = () => {
   return (
