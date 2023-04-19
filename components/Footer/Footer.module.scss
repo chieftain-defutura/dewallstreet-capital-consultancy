@@ -1,0 +1,183 @@
+.footerWrapper {
+  background: #0a0a0a;
+  padding: 32px 98px;
+  @media (max-width: 1024px) {
+    padding: 32px;
+  }
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .firstContent {
+      border-right: 1px solid rgba(238, 238, 238, 0.1);
+      @media (max-width: 1024px) {
+        border: none;
+      }
+      .logo {
+        width: 100%;
+        margin-bottom: -4px;
+        > div {
+          position: unset !important;
+        }
+        .image {
+          object-fit: contain;
+          max-width: 236px !important;
+          width: 100% !important;
+          position: relative !important;
+          height: unset !important;
+        }
+      }
+      .addressDetails {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 24px;
+        p {
+          font-size: 14px;
+          color: #aaaaaa;
+          line-height: 18px;
+        }
+      }
+    }
+    .secondContainer {
+      padding-left: 64px;
+      @media (max-width: 1024px) {
+        padding-left: 0;
+      }
+      .secondContent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 14px;
+
+        .firm {
+          h5 {
+            font-family: var(--font-semiBold);
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 100;
+            margin-bottom: 8px;
+            @media (max-width: 768px) {
+              font-size: 14px;
+              margin-bottom: 16px;
+            }
+          }
+          p {
+            font-size: 16px;
+            color: #aaaaaa;
+            margin-top: 16px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+              margin-top: 14px;
+            }
+          }
+        }
+        .followUsMedia {
+          h5 {
+            font-family: var(--font-semiBold);
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 100;
+            margin-bottom: 16px;
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+          }
+
+          @media (min-width: 769px) {
+            display: none;
+          }
+        }
+        .appoinment {
+          @media (max-width: 768px) {
+            display: none;
+          }
+          .rightArrow {
+            display: flex;
+            align-items: center;
+            h2 {
+              color: #fefefe;
+              font-size: 32px;
+              line-height: 38px;
+              font-family: var(--font-semiBold);
+            }
+          }
+          .follow {
+            margin-top: 32px;
+            h5 {
+              font-family: var(--font-semiBold);
+              color: #e1e1e1;
+              font-size: 16px;
+            }
+            .socialMedia {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+      .appointmentMedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 24px 0;
+        @media (max-width: 425px) {
+          padding: 6px 0;
+          margin-bottom: 15px;
+        }
+        h2 {
+          font-size: 24px;
+          @media (max-width: 400px) {
+            font-size: 21px;
+          }
+        }
+        img {
+          width: 28px;
+        }
+        @media (min-width: 769px) {
+          display: none;
+        }
+      }
+      .copyRightContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(238, 238, 238, 0.1);
+        @media (max-width: 768px) {
+          display: block;
+          text-align: center;
+        }
+
+        .terms {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-top: 14px;
+          @media (max-width: 768px) {
+            justify-content: center;
+          }
+          p {
+            font-size: 14px;
+            color: #8c8c8c;
+          }
+          .borderRight {
+            border-right: 1px solid #cccccc;
+            height: 12px;
+          }
+        }
+        .copyright {
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+}
