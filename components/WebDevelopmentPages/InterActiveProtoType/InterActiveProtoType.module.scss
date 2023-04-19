@@ -1,0 +1,77 @@
+.interActiveProtoType {
+  background-image: url("../../../public/assets/images/interactive-bg-img.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .heading {
+    padding: 96px 0;
+    @media (max-width: 768px) {
+      padding: 52px 0;
+    }
+    h1 {
+      font-size: 64px;
+      letter-spacing: -0.06em;
+      text-align: center;
+      font-weight: 100;
+      @media (max-width: 1024px) {
+        font-size: 42px;
+        padding: 0 32px;
+      }
+      @media (max-width: 587px) {
+        font-size: 32px;
+      }
+      @media (max-width: 425px) {
+        font-size: 28px;
+      }
+    }
+    .interActiveVideo {
+      display: flex;
+      justify-content: center;
+      padding-top: 32px;
+      @media (max-width: 768px) {
+        padding: 32px;
+      }
+      video {
+        max-width: 600px;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+      }
+    }
+    .interActiveFlexContent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 36px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+      @media (max-width: 425px) {
+        gap: 58px;
+      }
+      .paraContent {
+        h2 {
+          color: #afafaf;
+          font-size: 40px;
+          span {
+            color: #02d4f8;
+            font-size: 40px;
+          }
+          @media (max-width: 425px) {
+            font-size: 38px;
+          }
+        }
+        p {
+          color: #fff;
+          font-size: 20px;
+          margin-top: 8px;
+          @media (max-width: 425px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

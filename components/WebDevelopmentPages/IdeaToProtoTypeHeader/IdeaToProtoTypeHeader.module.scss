@@ -1,0 +1,109 @@
+.ideaToProtoTypeWrapper {
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 58px;
+  .ideaToProtoTypeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+    .prototypeContent {
+      display: flex;
+      align-items: center;
+      @media (max-width: 1024px) {
+        padding-bottom: 20px;
+      }
+
+      .firstItem {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 16px 24px;
+
+        .imageContainer {
+          width: 100%;
+          > div {
+            position: unset !important;
+          }
+          .image {
+            object-fit: contain;
+            max-width: 24px !important;
+            position: relative !important;
+            height: unset !important;
+          }
+        }
+        .uxBox {
+          border: 2.5px solid #fff;
+          border-radius: 6px;
+          padding: 20px;
+          @media (max-width: 425px) {
+            padding: 16px;
+          }
+          h1 {
+            font-size: 20px;
+          }
+        }
+      }
+      .secondItem {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 24px;
+        .pBox {
+          border: 2.5px solid #02d4f8;
+          border-radius: 6px;
+          padding: 20px;
+          @media (max-width: 425px) {
+            padding: 16px;
+          }
+          h1 {
+            color: #02d4f8;
+            font-size: 20px;
+          }
+        }
+        .para {
+          h3 {
+            font-size: 24px;
+            font-family: var(--font-semiBold);
+            letter-spacing: -0.06em;
+            @media (max-width: 425px) {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      @media (max-width: 1024px) {
+        justify-content: space-around;
+        gap: 0;
+      }
+      a {
+        &:hover {
+          color: #02d4f8;
+        }
+        @media (max-width: 425px) {
+          font-size: 12px;
+        }
+      }
+    }
+    .scheduleBtn {
+      padding-right: 32px;
+      button {
+        font-size: 14px;
+        padding: 9px 32px;
+      }
+      @media (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        padding: 32px;
+      }
+    }
+  }
+}
