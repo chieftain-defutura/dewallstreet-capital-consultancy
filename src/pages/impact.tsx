@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "../styles/impact.module.scss";
 import Company from "../../components/company";
+import Founder from "../../components/FounderSlider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,7 +47,7 @@ export default function Impact() {
                 </div>
                 <div className={styles.border_right}></div>
               </div>
-              {/* <Founder /> */}
+              <Founder />
             </div>
             <div className={styles.border_bottom}></div>
             <Company />

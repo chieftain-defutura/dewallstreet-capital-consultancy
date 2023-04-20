@@ -132,3 +132,28 @@ a {
   place-items: center;
   text-align: center;
 }
+
+.slick-list {
+  width: 500px;
+}
+@media (max-width: 480px) {
+  .slick-list {
+    width: 350px;
+  }
+}
+.slick-dots {
+  margin: 0 !important;
+}
+.slick-dots li {
+  margin: 0 !important;
+}
+
+.slick-dots li button::before {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-size: 0px;
+}
+.slick-dots li.slick-active button::before {
+  color: #ffffff !important;
+  font-size: 12px;
+}

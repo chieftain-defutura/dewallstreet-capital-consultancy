@@ -128,9 +128,16 @@
         align-items: center;
         gap: 20px;
         @media (max-width: 1024px) {
-          display: block;
+          display: flex;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 1;
+          max-width: 100vw;
+          max-height: 100vh;
         }
-        .startup_cards {
+        .startup_cards,
+        .startup_card {
           border: 1px solid #363637;
           max-width: 356px;
           width: 100%;
@@ -139,6 +146,13 @@
           padding: 25px;
           @media (max-width: 1024px) {
             margin: 25px 0;
+            // position: absolute;
+            // width: 100%;
+            // height: 100%;
+            // top: 0;
+            // left: 0;
+            // max-width: 100vw;
+            // max-height: 100vh;
           }
 
           .startup_flexContent {
@@ -177,6 +191,17 @@
             }
           }
         }
+        .startup_cards {
+          @media (max-width: 1024px) {
+            display: none;
+          }
+        }
+        .startup_card {
+          display: none !important;
+          @media (max-width: 1024px) {
+            display: block !important;
+          }
+        }
       }
     }
   }
@@ -187,7 +212,8 @@
 
     .girl_img_media {
       img {
-        width: 300px;
+        width: 220px;
+        height: auto;
         @media (max-width: 685px) {
           width: 200px;
         }

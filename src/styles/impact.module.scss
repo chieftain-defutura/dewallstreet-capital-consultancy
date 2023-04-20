@@ -14,30 +14,36 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    @media (max-width: 768px) {
+
+    @media (max-width: 1168px) {
       display: flex;
       flex-direction: column;
+      padding-bottom: 40px;
+      gap: 20px;
     }
 
     .hero_wrapper {
       display: flex;
+      align-items: center;
+      gap: 20px;
+
       .group_img {
         display: none;
       }
       @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        gap: 0;
         .group_img {
-          display: block;
+          display: flex;
           position: relative;
+          align-items: center;
+          justify-content: center;
 
           img {
-            width: 410px;
-            max-width: 100%;
-            height: 364px;
-            max-height: 100%;
-            padding: 24px 40px;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
           }
         }
         .member {
@@ -48,15 +54,6 @@
         .group_img {
           display: block;
           position: relative;
-
-          img {
-            width: 310px;
-            max-width: 100%;
-            height: 264px;
-            max-height: 100%;
-            padding: 24px 40px;
-            object-fit: contain;
-          }
         }
       }
       img {
@@ -66,18 +63,18 @@
     .explain {
       h4 {
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 100;
         line-height: 40px;
         letter-spacing: -0.06em;
-        padding: 148px 64px;
+        // padding: 128px 64px;
       }
       @media (max-width: 768px) {
         h4 {
-          font-size: 24px;
-          font-weight: 400;
+          font-size: 20px;
+          font-weight: 100;
           line-height: 40px;
           letter-spacing: -0.06em;
-          padding: 24px 17px;
+          padding: 20px 17px 0;
         }
       }
     }
