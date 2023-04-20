@@ -29,17 +29,26 @@ const ApproachOurProject: React.FC = () => {
   useEffect(() => {}, []);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     autoplayspeed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 475,
+        settings: {
+          dots: true,
+          infinite: true,
+        },
+      },
+    ],
   };
   return (
-    <div className={styles.approachOurProject} id="approach">
+    <div className={styles.approachOurProject}>
       <div>
         <div className={styles.approachOurProjectContainer}>
           <h1>How we approach our Projects</h1>

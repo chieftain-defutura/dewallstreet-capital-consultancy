@@ -37,6 +37,9 @@
           width: 80%;
         }
       }
+      @media (max-width: 575px) {
+        margin-top: 12px;
+      }
     }
     .links {
       display: flex;
@@ -111,9 +114,14 @@
   background: rgba(14, 14, 14, 1);
   z-index: 1000;
   @media (max-width: 575px) {
-    top: 56.3px;
+    top: 66.3px;
+    width: 250px;
   }
   .links {
+    margin-top: 32px;
+    @media (max-width: 425px) {
+      margin-top: 22px;
+    }
     a {
       color: #8a8a8a;
       @media (max-width: 920px) {

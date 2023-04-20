@@ -58,16 +58,16 @@ const Header: React.FC = () => {
               onClick={() => setOpenClose((m) => !m)}
               src={Menu}
               alt=""
-              width={34}
-              height={34}
+              width={28}
+              height={28}
             />
           ) : (
             <Image
               onClick={() => setOpenClose((m) => !m)}
               src={Close}
               alt=""
-              width={34}
-              height={34}
+              width={28}
+              height={28}
             />
           )}
         </div>
