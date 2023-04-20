@@ -3,25 +3,28 @@ import Image from "next/image";
 import ChevronRight from "../../../public/assets/icons/chevron-right.png";
 import styles from "./IdeaToProtoTypeHeader.module.scss";
 import Button from "../../Button";
+import Link from "next/link";
 
 const IdeaToProtoTypeHeader: React.FC = () => {
   return (
     <div className={styles.ideaToProtoTypeWrapper}>
       <div className={styles.ideaToProtoTypeContainer}>
         <div className={styles.prototypeContent}>
-          <div className={styles.firstItem}>
-            <div className={styles.imageContainer}>
-              <Image
-                src={ChevronRight}
-                alt=""
-                layout="fill"
-                className={styles.image}
-              />
+          <Link href={"/startup-ux-services"} style={{ color: "#fff" }}>
+            <div className={styles.firstItem}>
+              <div className={styles.imageContainer}>
+                <Image
+                  src={ChevronRight}
+                  alt=""
+                  layout="fill"
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.uxBox}>
+                <h1>UX</h1>
+              </div>
             </div>
-            <div className={styles.uxBox}>
-              <h1>UX</h1>
-            </div>
-          </div>
+          </Link>
           <div className={styles.secondItem}>
             <div className={styles.pBox}>
               <h1>12P</h1>

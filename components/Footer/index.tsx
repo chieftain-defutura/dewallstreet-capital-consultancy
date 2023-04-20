@@ -37,11 +37,15 @@ const Footer: React.FC = () => {
               <div className={styles.addressDetails}>
                 <Image src={Mail} alt="" width={24} height={24} />
 
-                <p>connect@dewallstreet.capital</p>
+                <a href="mailto:connect@dewallstreet.capital">
+                  <p>connect@dewallstreet.capital</p>
+                </a>
               </div>
               <div className={styles.addressDetails}>
                 <Image src={Phone} alt="" width={24} height={24} />
-                <p>+91 44356 72539 / +91 44356 72539</p>
+                <a href="tel:+4435672539">
+                  <p>+91 44356 72539 / +91 44356 72539</p>
+                </a>
               </div>
               <div className={styles.borderRight}></div>
             </div>
@@ -51,61 +55,60 @@ const Footer: React.FC = () => {
             <div className={styles.secondContent}>
               <div className={styles.firm}>
                 <h5>Firm</h5>
-                <Link href="">
+                <Link href="/about-us">
                   <p>About Us</p>
                 </Link>
-                <Link href="">
+                <Link href="/jobs">
                   <p>Jobs</p>
                 </Link>
-                <Link href="">
+                <Link href="/case-study">
                   <p>Case Study</p>
                 </Link>
-                <Link href="">
+                <Link href="/latest-news">
                   <p>Latest News</p>
                 </Link>
               </div>
               <div className={styles.firm}>
                 <h5>Wings</h5>
-                <Link href="">
+                <Link href="/bureaus">
                   <p>Bureaus</p>
                 </Link>
-                <Link href="">
+                <Link href="/studios">
                   <p>Studios</p>
                 </Link>
-                <Link href="">
+                <Link href="/labs">
                   <p>Labs</p>
                 </Link>
-                <Link href="">
+                <Link href="/boards">
                   <p>Boards</p>
                 </Link>
               </div>
               <div className={styles.followUsMedia}>
                 <h5>Follow us on</h5>
-                <div className={styles.icon}>
-                  <Image src={Twiter} alt="" width={20} height={20} />
-                  <Link href="">
+                <a href="">
+                  <div className={styles.icon}>
+                    <Image src={Twiter} alt="" width={20} height={20} />
                     <p>Twitter</p>
-                  </Link>
-                </div>
-                <div className={styles.icon}>
-                  <Image src={Instagram} alt="" width={20} height={20} />
-                  <Link href="">
+                  </div>
+                </a>
+                <a href="">
+                  <div className={styles.icon}>
+                    <Image src={Instagram} alt="" width={20} height={20} />
                     <p>Instagram</p>
-                  </Link>
-                </div>
-                <div className={styles.icon}>
-                  <Image src={Linkedin} alt="" width={20} height={20} />
-
-                  <Link href="">
+                  </div>
+                </a>
+                <a href="">
+                  <div className={styles.icon}>
+                    <Image src={Linkedin} alt="" width={20} height={20} />
                     <p>Linkedin</p>
-                  </Link>
-                </div>
-                <div className={styles.icon}>
-                  <Image src={Telegram} alt="" width={20} height={20} />
-                  <Link href="">
+                  </div>
+                </a>
+                <a href="">
+                  <div className={styles.icon}>
+                    <Image src={Telegram} alt="" width={20} height={20} />
                     <p>Telegram</p>
-                  </Link>
-                </div>
+                  </div>
+                </a>
               </div>
               <div className={styles.appoinment}>
                 <div className={styles.rightArrow}>
@@ -119,24 +122,24 @@ const Footer: React.FC = () => {
                   <h5>Follow Us On</h5>
                   <div className={styles.socialMedia}>
                     <div>
-                      <Link href="">
+                      <a href="">
                         <Image src={Twiter} alt="" width={20} height={20} />
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link href="">
+                      <a href="">
                         <Image src={Instagram} alt="" width={20} height={20} />
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link href="">
+                      <a href="">
                         <Image src={Linkedin} alt="" width={20} height={20} />
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link href="">
+                      <a href="">
                         <Image src={Telegram} alt="" width={20} height={20} />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -149,11 +152,13 @@ const Footer: React.FC = () => {
             </div>
             <div className={styles.copyRightContent}>
               <div className={styles.terms}>
-                <p>Terms</p>
+                <Link href="/terms">
+                  <p>Terms</p>
+                </Link>
                 <div className={styles.borderRight}></div>
-                <p>Privacy policies</p>
-                <div className={styles.borderRight}></div>
-                <p>Connect</p>
+                <Link href="/privacy-policies">
+                  <p>Privacy policies</p>
+                </Link>
               </div>
               <div className={styles.copyright}>
                 <p>Copyright © 2022 Dewallstreet ® All right reserved</p>

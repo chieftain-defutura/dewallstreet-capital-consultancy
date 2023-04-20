@@ -4,7 +4,6 @@ import Link from "next/link";
 import classNames from "classnames";
 import { Inter } from "next/font/google";
 import styles from "@/styles/userexperience.module.scss";
-import HomeContent from "../../components/Home";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,12 +30,14 @@ export default function UserExperienceStudio() {
               <Link href={"/startup-ux-services"}>
                 <div className={styles.services_icons}>
                   <div>
-                    <Image
-                      src={"/assets/icons/uxService.svg"}
-                      alt="icon"
-                      width={36}
-                      height={36}
-                    />
+                    <div className={styles.imageContent}>
+                      <Image
+                        src={"/assets/icons/uxService.svg"}
+                        alt="icon"
+                        width={36}
+                        height={36}
+                      />
+                    </div>
                     <h3>STARTUP</h3>
                     <h3>UX SERVICES</h3>
                   </div>
@@ -46,8 +47,8 @@ export default function UserExperienceStudio() {
                 <Image
                   src={"/assets/images/userExperienceStudioImg.png"}
                   alt="UserExperienceStudioImg"
-                  width={708}
-                  height={423}
+                  layout="fill"
+                  className={styles.image}
                 />
               </div>
               <Link href={"/insights"}>
@@ -99,7 +100,7 @@ export default function UserExperienceStudio() {
             )}
           >
             <div>
-              <img
+              <Image
                 src={"/assets/images/userExperience-img-2.png"}
                 alt="UserExperienceImgTwo"
                 width={202}
