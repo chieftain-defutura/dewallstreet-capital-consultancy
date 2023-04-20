@@ -5,9 +5,11 @@ import Image from "next/image";
 import styles from "./Home.module.scss";
 import Arrow from "../../public/assets/images/external-link.png";
 import classnames from "classnames";
+import SplashScreen from "../SplashScreen";
 const HomeContent = () => {
   return (
     <>
+      <SplashScreen />
       <div className={styles.home_container}>
         <div className={styles.background_clip}>
           <video

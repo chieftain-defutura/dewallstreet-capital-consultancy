@@ -50,10 +50,40 @@
 
 // export default SplashScreen;
 
-import React from "react";
+import React, { useEffect, useState } from "react";
+import logo from "../../public/assets/images/dewallstreet.svg";
+import Image from "next/image";
+import styles from "./SplashScreen.module.scss";
 
-const SplashScreen = () => {
-  return <div>SplashScreen</div>;
+const SplashScreen: React.FC = () => {
+  const [show, setShow] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setShow(false), 3000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+  return (
+    <div className="mx">
+      {show && (
+        <div className={styles.splashscreen}>
+          <div className={styles.splashscreenLogo}>
+            <Image src={logo} alt="" layout="fill" className={styles.image} />
+          </div>
+          <div className={styles.acessingPort}>
+            <p>acessing port.</p>
+            <div className={styles.splashContainer}>
+              <div className={styles.dot_1}></div>
+              <div className={styles.dot_2}></div>
+              <div className={styles.dot_3}></div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default SplashScreen;
