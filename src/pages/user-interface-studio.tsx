@@ -99,7 +99,7 @@ export default function UserExperienceStudio() {
             )}
           >
             <div>
-              <img
+              <Image
                 src={"/assets/images/userExperience-img-2.png"}
                 alt="UserExperienceImgTwo"
                 width={202}
