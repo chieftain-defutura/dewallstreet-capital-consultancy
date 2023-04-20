@@ -27,7 +27,7 @@ const LatestNews = () => {
         ))}
       </div>
       <div className={styles.button}>
-        <Link href={"/start-up/idea-to-prototype"}>
+        <Link href={"/idea-to-prototype"}>
           <Button varient="secondary" style={{ background: "#252525" }}>
             Go Back
           </Button>
