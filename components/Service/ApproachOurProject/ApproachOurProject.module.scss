@@ -1,11 +1,17 @@
 .approachOurProject {
   background-image: url("../../../public/assets/images/circle-bg-img.png");
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
+
   .approachOurProjectContainer {
     padding: 64px 0;
+    @media (max-width: 900px) {
+      padding: 32px 0;
+    }
+
     h1 {
       font-size: 64px;
       letter-spacing: -0.06em;
@@ -30,9 +36,100 @@
       max-width: 680px;
       width: 100%;
       margin: 0 auto;
+      @media (max-width: 768px) {
+        padding: 32px;
+      }
       p {
         cursor: pointer;
-        font-size: 24px;
+        font-size: 22px;
+        @media (max-width: 900px) {
+          font-size: 18px;
+        }
+        @media (max-width: 425px) {
+          font-size: 14px;
+        }
+      }
+    }
+    .preproductionFirstContent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      @media (max-width: 1024px) {
+        gap: 10px;
+      }
+      .arrow {
+        border-radius: 50%;
+        background: #141414;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 475px) {
+          margin: 0px -40px;
+        }
+        @media (max-width: 475px) {
+          margin: 0px -50px;
+        }
+      }
+
+      .sliderContent {
+        max-width: 800px;
+        width: 100%;
+        margin: 64px auto;
+        @media (max-width: 900px) {
+          max-width: 500px;
+          margin: 32px auto;
+        }
+        @media (max-width: 625px) {
+          max-width: 350px;
+          margin: 32px auto;
+        }
+        .approachOurFlexContent {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          place-items: center;
+          @media (max-width: 900px) {
+            grid-template-columns: 1fr;
+          }
+          .approachOurImg {
+            width: 100%;
+            @media (max-width: 900px) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            > div {
+              position: unset !important;
+            }
+            .image {
+              object-fit: contain;
+              max-width: 295px !important;
+              width: 100% !important;
+              position: relative !important;
+              height: unset !important;
+              @media (max-width: 475px) {
+                max-width: 200px !important;
+              }
+            }
+          }
+          .approachourContent {
+            @media (max-width: 900px) {
+              text-align: center;
+              margin-top: 62px;
+            }
+            h5 {
+              letter-spacing: -0.06em;
+              font-size: 32px;
+              font-weight: 100;
+              margin-bottom: 12px;
+            }
+            p {
+              color: #aaaaaa;
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
   }

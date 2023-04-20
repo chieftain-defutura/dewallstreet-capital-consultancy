@@ -1,10 +1,43 @@
-import React, { useState } from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./ApproachOurProject.module.scss";
+import ArrowLeft from "../../../public/assets/icons/arrow-down-left.svg";
+import ArrowRight from "../../../public/assets/icons/arrow-down-right.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+import {
+  IApproachOurProject,
+  IProduction,
+  IPostProduction,
+} from "./ApproachOurProject";
 
 const ApproachOurProject: React.FC = () => {
+  const ref = useRef<Slider>(null);
   const [isActive, setisActive] = useState("Preproduction");
   const [activeColor, setActiveColor] = useState(false);
   const [active, setActive] = useState(0);
+  const sectionRef = useRef(null);
+  const triggerRef = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {}, []);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplayspeed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   return (
     <div className={styles.approachOurProject}>
       <div>
@@ -37,6 +70,165 @@ const ApproachOurProject: React.FC = () => {
               </div>
             </div>
           </div>
+
+          {isActive === "Preproduction" && (
+            <div className={styles.preproductionFirstContent}>
+              <div
+                className={styles.arrow}
+                style={{ cursor: "pointer" }}
+                onClick={() => ref.current?.slickPrev()}
+              >
+                <Image
+                  src={ArrowLeft}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className={styles.image}
+                />
+              </div>
+
+              <div>
+                <div className={styles.sliderContent}>
+                  <Slider ref={ref} {...settings}>
+                    {IApproachOurProject.map((f, index) => {
+                      return (
+                        <div key={index}>
+                          <div className={styles.approachOurFlexContent}>
+                            <div className={styles.approachOurImg}>
+                              <Image
+                                src={f.image.src}
+                                alt={f.image.alt}
+                                className={styles.image}
+                                layout="fill"
+                              />
+                            </div>
+                            <div className={styles.approachourContent}>
+                              <h5>{f.title}</h5>
+                              <p>{f.description}</p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </Slider>
+                </div>
+              </div>
+
+              <div
+                className={styles.arrow}
+                style={{ cursor: "pointer" }}
+                onClick={() => ref.current?.slickNext()}
+              >
+                <Image src={ArrowRight} alt="" width={24} height={24} />
+              </div>
+            </div>
+          )}
+
+          {isActive === "Production" && (
+            <div className={styles.preproductionFirstContent}>
+              <div
+                className={styles.arrow}
+                style={{ cursor: "pointer" }}
+                onClick={() => ref.current?.slickPrev()}
+              >
+                <Image
+                  src={ArrowLeft}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className={styles.image}
+                />
+              </div>
+
+              <div>
+                <div className={styles.sliderContent}>
+                  <Slider ref={ref} {...settings}>
+                    {IProduction.map((f, index) => {
+                      return (
+                        <div key={index}>
+                          <div className={styles.approachOurFlexContent}>
+                            <div className={styles.approachOurImg}>
+                              <Image
+                                src={f.image.src}
+                                alt={f.image.alt}
+                                className={styles.image}
+                                layout="fill"
+                              />
+                            </div>
+                            <div className={styles.approachourContent}>
+                              <h5>{f.title}</h5>
+                              <p>{f.description}</p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </Slider>
+                </div>
+              </div>
+
+              <div
+                className={styles.arrow}
+                style={{ cursor: "pointer" }}
+                onClick={() => ref.current?.slickNext()}
+              >
+                <Image src={ArrowRight} alt="" width={24} height={24} />
+              </div>
+            </div>
+          )}
+
+          {isActive === "Postproduction" && (
+            <div className={styles.preproductionFirstContent}>
+              <div
+                className={styles.arrow}
+                style={{ cursor: "pointer" }}
+                onClick={() => ref.current?.slickPrev()}
+              >
+                <Image
+                  src={ArrowLeft}
+                  alt=""
+                  width={24}
+                  height={24}
+                  className={styles.image}
+                />
+              </div>
+
+              <div>
+                <div className={styles.sliderContent}>
+                  <Slider ref={ref} {...settings}>
+                    {IPostProduction.map((f, index) => {
+                      return (
+                        <div key={index}>
+                          <div className={styles.approachOurFlexContent}>
+                            <div className={styles.approachOurImg}>
+                              <Image
+                                src={f.image.src}
+                                alt={f.image.alt}
+                                className={styles.image}
+                                layout="fill"
+                              />
+                            </div>
+                            <div className={styles.approachourContent}>
+                              <h5>{f.title}</h5>
+                              <p>{f.description}</p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </Slider>
+                </div>
+              </div>
+
+              <div
+                className={styles.arrow}
+                style={{ cursor: "pointer" }}
+                onClick={() => ref.current?.slickNext()}
+              >
+                <Image src={ArrowRight} alt="" width={24} height={24} />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -42,6 +42,7 @@
       h3 {
         font-size: 40px;
         font-weight: 100;
+        letter-spacing: -0.06em;
         @media (max-width: 645px) {
           font-size: 34px;
         }
@@ -56,7 +57,7 @@
       .a_to_z_content {
         display: flex;
         align-items: center;
-        margin-top: 46px;
+        margin-top: 16px;
         @media (max-width: 1024px) {
           justify-content: center;
         }
@@ -68,13 +69,12 @@
         }
         img {
           width: 70px;
-          margin-top: -50px;
         }
       }
       h2 {
         color: #02d4f8;
         font-size: 64px;
-        margin-top: -52px;
+        margin-top: -30px;
         font-family: var(--font-semiBold);
         @media (max-width: 645px) {
           font-size: 50px;
@@ -85,9 +85,10 @@
         }
       }
       p {
-        color: #fff;
+        color: #ebebeb;
         margin-top: 44px;
         line-height: 22px;
+        font-size: 16px;
       }
       .visit_btn {
         margin-top: 64px;
