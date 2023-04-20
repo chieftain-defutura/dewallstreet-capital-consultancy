@@ -19,6 +19,10 @@ const DivisionsCard = () => {
                 height={21}
               />
               <p>{f.title}</p>
+              <span>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </span>
             </div>
             <div className={styles.second_layer_parent}>
               {f.content.map((f, i) => (

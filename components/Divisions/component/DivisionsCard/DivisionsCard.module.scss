@@ -51,6 +51,7 @@
     }
     .division_header_content {
       p {
+        color: #e1e1e1;
         font-weight: 500;
         font-size: 16px;
       }
@@ -93,19 +94,27 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 23px 66px;
+        padding: 23px 29px;
         gap: 24px;
         background: rgba(0, 0, 0, 0.16);
         backdrop-filter: blur(10px);
         p {
           color: #fff;
-
+          letter-spacing: 0.12em;
           margin-top: -20px;
           text-transform: uppercase;
         }
+        span {
+          font-weight: 100;
+          font-family: var(--font-light);
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: #ffffff;
+        }
       }
       .second_layer_parent {
-        padding: 37px 24px;
+        padding: 37px 24px 17px;
         background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(17px);
         .second_layer {
@@ -113,10 +122,12 @@
           flex-direction: row;
           align-items: center;
           text-align: left;
-          gap: 4px;
+          gap: 20px;
           cursor: pointer;
           padding: 0 0 27px;
-
+          p {
+            letter-spacing: 0.12em;
+          }
           &:hover {
             svg path {
               stroke: #fff;

@@ -1,37 +1,15 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import { Inter } from "next/font/google";
-import { useSwipeable } from "react-swipeable";
-import { motion } from "framer-motion";
 import { IStartUpUxServices } from "../data/startup";
 import Image from "next/image";
 import styles from "../styles/startup.module.scss";
 import Link from "next/link";
 import Button from "../../components/Button";
-import classNames from "classnames";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function StartupUxServices() {
-  const [active, setActive] = useState(0);
-
-  const handlePrev = () => setActive((a) => (a === 0 ? 0 : a - 1));
-
-  const handleNext = () =>
-    setActive((a) =>
-      a === IStartUpUxServices.length - 1
-        ? IStartUpUxServices.length - 1
-        : a + 1
-    );
-
-  const handleSwipe = (e: any) => {
-    if (e.dir === "Left") handleNext();
-    if (e.dir === "Right") handlePrev();
-  };
-
-  const handlers = useSwipeable({
-    onSwiped: handleSwipe,
-  });
   return (
     <>
       <Head>
@@ -81,7 +59,7 @@ export default function StartupUxServices() {
                     height={50}
                   />
                 </div>
-                <div className={styles.IStartUpUxServices} {...handlers}>
+                <div className={styles.IStartUpUxServices}>
                   {IStartUpUxServices.map((f, index) => {
                     return (
                       <div key={index} className={styles.startup_cards}>
@@ -114,61 +92,6 @@ export default function StartupUxServices() {
                           </Link>
                         </div>
                       </div>
-                    );
-                  })}
-                  {IStartUpUxServices.map((f, index) => {
-                    return (
-                      <motion.div
-                        key={index}
-                        className={
-                          index === active
-                            ? classNames(styles.startup_card)
-                            : styles.startup_card
-                        }
-                        style={{}}
-                        initial={{ scale: 0, x: -10 }}
-                        animate={{
-                          x: 0,
-                          left: `${(index - active) * 34.2}vw`,
-                          scale: index === active ? 1 : 0.8,
-                          opacity: index === active ? 1 : 0.7,
-                          zIndex: index === active ? 1 : 0,
-                        }}
-                        transition={{
-                          type: "spring",
-                          stiffness: 200,
-                          damping: 30,
-                        }}
-                      >
-                        <div className={styles.startup_flexContent}>
-                          <div>
-                            <Image
-                              src={f.svg}
-                              alt="svg"
-                              width={32}
-                              height={32}
-                            />
-                          </div>
-                          <div>
-                            <h3>{f.heading}</h3>
-                          </div>
-                        </div>
-                        <div className={styles.prototype_img}>
-                          <Image
-                            src={f.image}
-                            alt="image"
-                            width={308}
-                            height={202}
-                          />
-                        </div>
-                        <div className={styles.prototype_content}>
-                          <h5>{f.title}</h5>
-                          <p>{f.description}</p>
-                          <Link href={`/${f.path}`}>
-                            <Button varient="primary">{f.button}</Button>
-                          </Link>
-                        </div>
-                      </motion.div>
                     );
                   })}
                 </div>
