@@ -3,9 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import HomeContent from "../../components/Home";
-import IdeaToProtoTypeHeader from "../../components/WebDevelopmentPages/IdeaToProtoTypeHeader";
-import InterActiveProtoType from "../../components/WebDevelopmentPages/InterActiveProtoType";
-import ApproachOurProject from "../../components/WebDevelopmentPages/ApproachOurProject";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +15,7 @@ export default function WebDevelopment() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <IdeaToProtoTypeHeader />
-        <InterActiveProtoType />
-        <ApproachOurProject />
-      </main>
+      <main></main>
     </>
   );
 }

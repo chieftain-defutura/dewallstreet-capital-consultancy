@@ -31,7 +31,7 @@ const HomeContent = () => {
                   src={"/assets/images/roll-arrow.png"}
                   alt="rollarroe"
                   width={100}
-                  height={100}
+                  height={96}
                 />
                 <h1>Z</h1>
               </div>
