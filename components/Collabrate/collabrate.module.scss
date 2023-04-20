@@ -23,7 +23,7 @@
   }
   h1 {
     text-align: center;
-    font-weight: 100;
+    font-weight: 600;
     font-size: 48px;
     max-width: 1000px;
     width: 100%;
@@ -45,6 +45,8 @@
       grid-template-columns: repeat(3, 1fr);
     }
     @media (max-width: 690px) {
+      gap: 32px;
+
       grid-template-columns: repeat(2, 1fr);
     }
     .detail {
@@ -52,6 +54,11 @@
         font-weight: 600;
         font-size: 16px;
         padding: 24px 0 10px;
+      }
+      img {
+        @media (max-width: 690px) {
+          width: 100%;
+        }
       }
     }
   }

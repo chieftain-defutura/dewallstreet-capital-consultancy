@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import LogoDark from "../../public/assets/icons/logo-dark.svg";
 import Image from "next/image";
+import styles from "../styles/Home.module.scss";
 import ChallengesAndSolutions from "../../components/Challenges&Solutions";
 import ImproveBuisness from "../../components/ImproveBuisness";
 import Collaborate from "../../components/Collabrate";
@@ -19,16 +20,19 @@ export default function WebDevelopment() {
       </Head>
       <main>
         <div
-          className="webdevelopment-hero"
+          className={styles.webdevelopment_hero}
           style={{ marginTop: "71px", position: "relative" }}
         >
-          <Image
-            src={LogoDark}
-            alt=""
-            width={100}
-            height={52}
-            style={{ position: "absolute" }}
-          />
+          <div className={styles.web_image}>
+            {" "}
+            <Image
+              src={LogoDark}
+              alt=""
+              width={290}
+              height={60}
+              style={{ position: "absolute" }}
+            />
+          </div>
           <video
             autoPlay
             muted

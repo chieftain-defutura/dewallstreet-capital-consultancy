@@ -8,7 +8,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   h1 {
+    font-size: 48px;
     padding: 0 64px;
+    @media (max-width: 750px) {
+      font-size: 24px;
+      padding: 0 34px;
+    }
   }
   .latest_news_divisions {
     display: flex;
@@ -16,7 +21,9 @@
     margin: 24px 0px 24px 60px;
     gap: 32px;
     overflow-x: scroll;
-
+    @media (max-width: 750px) {
+      margin: 24px 0px 24px 34px;
+    }
     &::-webkit-scrollbar {
       width: 5px;
       height: 3px;
@@ -47,14 +54,23 @@
           height: 300px;
         }
         h2 {
+          font-size: 36px;
           padding: 0px 0 10px;
+          @media (max-width: 750px) {
+            font-size: 16px;
+          }
         }
       }
       .second_column {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column-reverse;
-
+        h2 {
+          font-size: 36px;
+          @media (max-width: 750px) {
+            font-size: 16px;
+          }
+        }
         img {
           padding: 10px 0;
           width: 232px;
@@ -66,5 +82,9 @@
   .button {
     display: flex;
     justify-content: center;
+    padding-top: 60px;
+    @media (max-width: 750px) {
+      padding-top: 30px;
+    }
   }
 }
