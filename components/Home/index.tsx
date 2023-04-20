@@ -173,11 +173,12 @@ const HomeContent = () => {
                   return (
                     <div key={index} className={styles.background_img}>
                       <Image
-                        src={"/public/assets/images/hexagon-img-1.png"}
+                        src={"/assets/images/hexagon-img-1.png"}
                         alt="HexagonImgOne"
                         width={101}
                         height={118}
                       />
+
                       <div
                         className={classnames(
                           styles.hexagon,
@@ -212,7 +213,8 @@ const HomeContent = () => {
                 <Image
                   src={"/assets/images/hexagon-img-2.png"}
                   alt="hexagon"
-                  layout="fill"
+                  width={250}
+                  height={300}
                 />
                 <div className={styles.hexagon_add}>
                   <h3>48+</h3>
@@ -273,8 +275,8 @@ const HomeContent = () => {
         <div className={styles.grid_content_one}>
           <div>
             <div
-              className={classnames(styles.hexagonArea, styles.third)}
-              style={{ transform: "translateY(-51px)" }}
+              className={classnames(styles.hexagonArea, styles.four)}
+              style={{ transform: "translateY(-55px)" }}
             >
               {IHexagon.slice(3, 5).map((f, index) => {
                 return (
@@ -300,8 +302,8 @@ const HomeContent = () => {
             </div>
 
             <div
-              className={(styles.hexagonArea, styles.four)}
-              style={{ transform: "translateY(-75px)" }}
+              className={classnames(styles.hexagonArea, styles.four)}
+              style={{ transform: "translateY(-80px)" }}
             >
               {IHexagon.slice(5, 6).map((f, index) => {
                 return (
@@ -521,7 +523,7 @@ const HomeContent = () => {
                 return (
                   <div key={index} className={styles.background_img}>
                     <Image
-                      src={"/public/assets/images/hexagon-img-1.png"}
+                      src={"/assets/images/hexagon-img-1.png"}
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
