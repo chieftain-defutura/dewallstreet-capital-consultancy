@@ -48,7 +48,7 @@ const ApproachOurProject: React.FC = () => {
     ],
   };
   return (
-    <div className={styles.approachOurProject}>
+    <div className={styles.approachOurProject} id="approach">
       <div>
         <div className={styles.approachOurProjectContainer}>
           <h1>How we approach our Projects</h1>

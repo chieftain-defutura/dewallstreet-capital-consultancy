@@ -1,9 +1,11 @@
+"use client";
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import IdeaToProtoTypeHeader from "../../components/Service/IdeaToProtoTypeHeader";
 import InterActiveProtoType from "../../components/Service/InterActiveProtoType";
 import ApproachOurProject from "../../components/Service/ApproachOurProject";
+import PortFolio from "../../components/Service/Portfolio";
+import Collaborate from "../../components/Collabrate";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +22,12 @@ export default function IdeaToProtoType() {
         <IdeaToProtoTypeHeader />
         <InterActiveProtoType />
         <ApproachOurProject />
+        <PortFolio />
+        <Collaborate
+          title="You’re one step away from making your ideas into reality."
+          textAlign="center"
+          heading="BENEFITS"
+        />
       </main>
     </>
   );
