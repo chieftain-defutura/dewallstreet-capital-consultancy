@@ -85,19 +85,31 @@ const Footer: React.FC = () => {
               </div>
               <div className={styles.followUsMedia}>
                 <h5>Follow us on</h5>
-                <a href="">
+                <a
+                  href="https://twitter.com/Dewallstreet_"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className={styles.icon}>
                     <Image src={Twiter} alt="" width={20} height={20} />
                     <p>Twitter</p>
                   </div>
                 </a>
-                <a href="">
+                <a
+                  href="https://instagram.com/dewallstreet.media"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className={styles.icon}>
                     <Image src={Instagram} alt="" width={20} height={20} />
                     <p>Instagram</p>
                   </div>
                 </a>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/company/dewallstreet-capital/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className={styles.icon}>
                     <Image src={Linkedin} alt="" width={20} height={20} />
                     <p>Linkedin</p>
@@ -122,17 +134,29 @@ const Footer: React.FC = () => {
                   <h5>Follow Us On</h5>
                   <div className={styles.socialMedia}>
                     <div>
-                      <a href="">
+                      <a
+                        href="https://twitter.com/Dewallstreet_"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Image src={Twiter} alt="" width={20} height={20} />
                       </a>
                     </div>
                     <div>
-                      <a href="">
+                      <a
+                        href="https://instagram.com/dewallstreet.media"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Image src={Instagram} alt="" width={20} height={20} />
                       </a>
                     </div>
                     <div>
-                      <a href="">
+                      <a
+                        href="https://www.linkedin.com/company/dewallstreet-capital/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <Image src={Linkedin} alt="" width={20} height={20} />
                       </a>
                     </div>

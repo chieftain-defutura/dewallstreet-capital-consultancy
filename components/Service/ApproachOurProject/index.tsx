@@ -32,14 +32,14 @@ const ApproachOurProject: React.FC = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     autoplayspeed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
   };
   return (
-    <div className={styles.approachOurProject}>
+    <div className={styles.approachOurProject} id="approach">
       <div>
         <div className={styles.approachOurProjectContainer}>
           <h1>How we approach our Projects</h1>

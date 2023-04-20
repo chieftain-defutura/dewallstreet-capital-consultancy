@@ -69,7 +69,7 @@
           margin: 0px -40px;
         }
         @media (max-width: 475px) {
-          margin: 0px -50px;
+          display: none;
         }
       }
 
@@ -92,6 +92,7 @@
           @media (max-width: 900px) {
             grid-template-columns: 1fr;
           }
+
           .approachOurImg {
             width: 100%;
             @media (max-width: 900px) {
@@ -130,6 +131,7 @@
             }
           }
         }
+        
       }
     }
   }
