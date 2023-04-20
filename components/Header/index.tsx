@@ -36,7 +36,7 @@ const Header: React.FC = () => {
   );
 
   const renderAccess = (
-    <div className={styles.access}>
+    <div className={styles.access} onClick={() => setOpenClose(false)}>
       <Image src={Access} alt="" width={50} height={50} />
       <p>Access</p>
     </div>

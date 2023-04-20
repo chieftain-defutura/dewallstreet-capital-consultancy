@@ -17,7 +17,7 @@ export default function Impact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <div className={styles.impacts_home}>
+        <div className={styles.impacts_home}>
           <div className={styles.mx}>
             <div className={styles.impact_hero}>
               <div className={styles.hero_wrapper}>
@@ -52,7 +52,7 @@ export default function Impact() {
             <div className={styles.border_bottom}></div>
             <Company />
           </div>
-        </div> */}
+        </div>
       </main>
     </>
   );
