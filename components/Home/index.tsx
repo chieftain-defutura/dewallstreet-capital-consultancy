@@ -196,8 +196,8 @@ const HomeContent = () => {
                   <Image
                     src={"/assets/images/serive_img.png"}
                     alt="service"
-                    width={205}
-                    height={240}
+                    width={130}
+                    height={200}
                   />
                   <div className={styles.hexagon_add}>
                     <h3>48+</h3>
@@ -213,8 +213,8 @@ const HomeContent = () => {
                 <Image
                   src={"/assets/images/hexagon-img-2.png"}
                   alt="hexagon"
-                  width={250}
-                  height={300}
+                  width={135}
+                  height={160}
                 />
                 <div className={styles.hexagon_add}>
                   <h3>48+</h3>
