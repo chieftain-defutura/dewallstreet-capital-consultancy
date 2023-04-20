@@ -24,7 +24,6 @@ export default function WebDevelopment() {
           style={{ marginTop: "71px", position: "relative" }}
         >
           <div className={styles.web_image}>
-            {" "}
             <Image
               src={LogoDark}
               alt=""
