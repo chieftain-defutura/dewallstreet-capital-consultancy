@@ -83,7 +83,7 @@
     .card {
       transition: all ease-in 0.5s;
       display: grid;
-      justify-content: flex-start;
+      // justify-content: flex-start;
 
       &:hover {
         transform: scale(1.03);
