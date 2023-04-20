@@ -1,9 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.scss";
-import HomeContent from "../../components/Home";
-
+import LogoDark from "../../public/assets/icons/logo-dark.svg";
+import Image from "next/image";
+import ChallengesAndSolutions from "../../components/Challenges&Solutions";
+import ImproveBuisness from "../../components/ImproveBuisness";
+import Collaborate from "../../components/Collabrate";
+import LatestNews from "../../components/LatestNews";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function WebDevelopment() {
@@ -15,7 +17,40 @@ export default function WebDevelopment() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+        <div
+          className="webdevelopment-hero"
+          style={{ marginTop: "71px", position: "relative" }}
+        >
+          <Image
+            src={LogoDark}
+            alt=""
+            width={100}
+            height={52}
+            style={{ position: "absolute" }}
+          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          >
+            <source
+              src="https://ik.imagekit.io/d4cf2o3ja/web-development.mp4?updatedAt=1680263299603"
+              type="video/mp4"
+            />
+          </video>
+          <ChallengesAndSolutions />
+          <ImproveBuisness />
+          <Collaborate title="How we collaborate  with you." textAlign="left" />
+          <LatestNews />
+        </div>
+      </main>
     </>
   );
 }
