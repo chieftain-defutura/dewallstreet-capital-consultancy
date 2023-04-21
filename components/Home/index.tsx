@@ -6,7 +6,7 @@ import styles from "./Home.module.scss";
 import Arrow from "../../public/assets/images/external-link.png";
 import classnames from "classnames";
 import SplashScreen from "../SplashScreen";
-const HomeContent = () => {
+const HomeContent: React.FC = () => {
   return (
     <>
       <SplashScreen />
