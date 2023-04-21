@@ -7,8 +7,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import {
   IApproachOurProject,
@@ -21,12 +19,6 @@ const ApproachOurProject: React.FC = () => {
   const [isActive, setisActive] = useState("Preproduction");
   const [activeColor, setActiveColor] = useState(false);
   const [active, setActive] = useState(0);
-  const sectionRef = useRef(null);
-  const triggerRef = useRef(null);
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  useEffect(() => {}, []);
 
   const settings = {
     dots: false,
@@ -93,6 +85,8 @@ const ApproachOurProject: React.FC = () => {
                   width={24}
                   height={24}
                   className={styles.image}
+                  priority
+                  quality={75}
                 />
               </div>
 
@@ -109,6 +103,8 @@ const ApproachOurProject: React.FC = () => {
                                 alt={f.image.alt}
                                 className={styles.image}
                                 layout="fill"
+                                priority
+                                quality={75}
                               />
                             </div>
                             <div className={styles.approachourContent}>
@@ -128,7 +124,14 @@ const ApproachOurProject: React.FC = () => {
                 style={{ cursor: "pointer" }}
                 onClick={() => ref.current?.slickNext()}
               >
-                <Image src={ArrowRight} alt="" width={24} height={24} />
+                <Image
+                  src={ArrowRight}
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                  quality={75}
+                />
               </div>
             </div>
           )}
@@ -146,6 +149,8 @@ const ApproachOurProject: React.FC = () => {
                   width={24}
                   height={24}
                   className={styles.image}
+                  priority
+                  quality={75}
                 />
               </div>
 
@@ -162,6 +167,8 @@ const ApproachOurProject: React.FC = () => {
                                 alt={f.image.alt}
                                 className={styles.image}
                                 layout="fill"
+                                priority
+                                quality={75}
                               />
                             </div>
                             <div className={styles.approachourContent}>
@@ -181,7 +188,14 @@ const ApproachOurProject: React.FC = () => {
                 style={{ cursor: "pointer" }}
                 onClick={() => ref.current?.slickNext()}
               >
-                <Image src={ArrowRight} alt="" width={24} height={24} />
+                <Image
+                  src={ArrowRight}
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                  quality={75}
+                />
               </div>
             </div>
           )}
@@ -199,6 +213,8 @@ const ApproachOurProject: React.FC = () => {
                   width={24}
                   height={24}
                   className={styles.image}
+                  priority
+                  quality={75}
                 />
               </div>
 
@@ -215,6 +231,8 @@ const ApproachOurProject: React.FC = () => {
                                 alt={f.image.alt}
                                 className={styles.image}
                                 layout="fill"
+                                priority
+                                quality={75}
                               />
                             </div>
                             <div className={styles.approachourContent}>
@@ -234,7 +252,14 @@ const ApproachOurProject: React.FC = () => {
                 style={{ cursor: "pointer" }}
                 onClick={() => ref.current?.slickNext()}
               >
-                <Image src={ArrowRight} alt="" width={24} height={24} />
+                <Image
+                  src={ArrowRight}
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                  quality={75}
+                />
               </div>
             </div>
           )}

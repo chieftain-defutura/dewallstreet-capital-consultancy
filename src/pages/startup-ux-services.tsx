@@ -19,7 +19,7 @@ export default function StartupUxServices() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className={styles.mx}>
+        <div>
           <div className={styles.startUp_ux_wrapper}>
             <div className={styles.startUp_ux_container}>
               <div className={styles.first_content}>
@@ -48,6 +48,8 @@ export default function StartupUxServices() {
                   alt="GirlImg"
                   width={276}
                   height={500}
+                  quality={75}
+                  priority
                 />
               </div>
               <div className={styles.startup_services_content}>
@@ -57,6 +59,8 @@ export default function StartupUxServices() {
                     alt="line-code"
                     width={782}
                     height={50}
+                    quality={75}
+                    priority
                   />
                 </div>
                 <div className={styles.IStartUpUxServices}>
@@ -70,6 +74,8 @@ export default function StartupUxServices() {
                               alt="svg"
                               width={32}
                               height={32}
+                              quality={75}
+                              priority
                             />
                           </div>
                           <div>
@@ -82,6 +88,8 @@ export default function StartupUxServices() {
                             alt="image"
                             width={308}
                             height={202}
+                            quality={75}
+                            priority
                           />
                         </div>
                         <div className={styles.prototype_content}>
@@ -105,6 +113,8 @@ export default function StartupUxServices() {
                   alt="GirlImg"
                   width={115}
                   height={235}
+                  quality={75}
+                  priority
                 />
               </div>
 

@@ -15,7 +15,7 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   return (
     <div className={styles.footerWrapper}>
-      <div className="mx">
+      <div>
         <div className={styles.footerContainer}>
           <div>
             <div className={styles.firstContent}>
@@ -25,24 +25,47 @@ const Footer: React.FC = () => {
                   alt=""
                   layout="fill"
                   className={styles.image}
+                  quality={75}
+                  priority
                 />
               </div>
               <div className={styles.addressDetails}>
-                <Image src={Map} alt="" width={24} height={24} />
+                <Image
+                  src={Map}
+                  alt=""
+                  width={24}
+                  height={24}
+                  quality={75}
+                  priority
+                />
                 <p>
                   #1, VOC Street, Mahalaxmi Nagar, East Tambaram, Selaiyur Post,
                   Tamilnadu - 600 059, India.
                 </p>
               </div>
               <div className={styles.addressDetails}>
-                <Image src={Mail} alt="" width={24} height={24} />
+                <Image
+                  src={Mail}
+                  alt=""
+                  width={24}
+                  height={24}
+                  quality={75}
+                  priority
+                />
 
                 <a href="mailto:connect@dewallstreet.capital">
                   <p>connect@dewallstreet.capital</p>
                 </a>
               </div>
               <div className={styles.addressDetails}>
-                <Image src={Phone} alt="" width={24} height={24} />
+                <Image
+                  src={Phone}
+                  alt=""
+                  width={24}
+                  height={24}
+                  quality={75}
+                  priority
+                />
                 <a href="tel:+4435672539">
                   <p>+91 44356 72539 / +91 44356 72539</p>
                 </a>
@@ -91,7 +114,14 @@ const Footer: React.FC = () => {
                   rel="noreferrer"
                 >
                   <div className={styles.icon}>
-                    <Image src={Twiter} alt="" width={20} height={20} />
+                    <Image
+                      src={Twiter}
+                      alt=""
+                      width={20}
+                      height={20}
+                      quality={75}
+                      priority
+                    />
                     <p>Twitter</p>
                   </div>
                 </a>
@@ -101,7 +131,14 @@ const Footer: React.FC = () => {
                   rel="noreferrer"
                 >
                   <div className={styles.icon}>
-                    <Image src={Instagram} alt="" width={20} height={20} />
+                    <Image
+                      src={Instagram}
+                      alt=""
+                      width={20}
+                      height={20}
+                      quality={75}
+                      priority
+                    />
                     <p>Instagram</p>
                   </div>
                 </a>
@@ -111,13 +148,27 @@ const Footer: React.FC = () => {
                   rel="noreferrer"
                 >
                   <div className={styles.icon}>
-                    <Image src={Linkedin} alt="" width={20} height={20} />
+                    <Image
+                      src={Linkedin}
+                      alt=""
+                      width={20}
+                      height={20}
+                      quality={75}
+                      priority
+                    />
                     <p>Linkedin</p>
                   </div>
                 </a>
                 <a href="">
                   <div className={styles.icon}>
-                    <Image src={Telegram} alt="" width={20} height={20} />
+                    <Image
+                      src={Telegram}
+                      alt=""
+                      width={20}
+                      height={20}
+                      quality={75}
+                      priority
+                    />
                     <p>Telegram</p>
                   </div>
                 </a>
@@ -127,7 +178,14 @@ const Footer: React.FC = () => {
                   <h2>Schedule an appointment</h2>
 
                   <div>
-                    <Image src={Rigtarrow} alt="" width={32} height={32} />
+                    <Image
+                      src={Rigtarrow}
+                      alt=""
+                      width={32}
+                      height={32}
+                      quality={75}
+                      priority
+                    />
                   </div>
                 </div>
                 <div className={styles.follow}>
@@ -139,7 +197,14 @@ const Footer: React.FC = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <Image src={Twiter} alt="" width={20} height={20} />
+                        <Image
+                          src={Twiter}
+                          alt=""
+                          width={20}
+                          height={20}
+                          quality={75}
+                          priority
+                        />
                       </a>
                     </div>
                     <div>
@@ -148,7 +213,14 @@ const Footer: React.FC = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <Image src={Instagram} alt="" width={20} height={20} />
+                        <Image
+                          src={Instagram}
+                          alt=""
+                          width={20}
+                          height={20}
+                          quality={75}
+                          priority
+                        />
                       </a>
                     </div>
                     <div>
@@ -157,12 +229,26 @@ const Footer: React.FC = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <Image src={Linkedin} alt="" width={20} height={20} />
+                        <Image
+                          src={Linkedin}
+                          alt=""
+                          width={20}
+                          height={20}
+                          quality={75}
+                          priority
+                        />
                       </a>
                     </div>
                     <div>
                       <a href="">
-                        <Image src={Telegram} alt="" width={20} height={20} />
+                        <Image
+                          src={Telegram}
+                          alt=""
+                          width={20}
+                          height={20}
+                          quality={75}
+                          priority
+                        />
                       </a>
                     </div>
                   </div>
@@ -172,7 +258,14 @@ const Footer: React.FC = () => {
             <div className={styles.appointmentMedia}>
               <h2>Schedule an appointment</h2>
 
-              <Image src={Rigtarrow} alt="" width={28} height={28} />
+              <Image
+                src={Rigtarrow}
+                alt=""
+                width={28}
+                height={28}
+                quality={75}
+                priority
+              />
             </div>
             <div className={styles.copyRightContent}>
               <div className={styles.terms}>

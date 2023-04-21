@@ -13,12 +13,26 @@ const LatestNews = () => {
         {LatestNewsData.map((f, i) => (
           <div key={i} className={styles.latest_news_columns}>
             <div className={styles.first_column}>
-              <Image src={f.firstImage} alt="" width={300} height={300} />
+              <Image
+                src={f.firstImage}
+                alt=""
+                width={300}
+                height={300}
+                quality={75}
+                priority
+              />
               <h2>{f.firstHeading}</h2>
               <p>{f.firstContent}</p>
             </div>
             <div className={styles.second_column}>
-              <Image src={f.secondImage} alt="" width={300} height={300} />
+              <Image
+                src={f.secondImage}
+                alt=""
+                width={300}
+                height={300}
+                quality={75}
+                priority
+              />
 
               <p>{f.secondContent}</p>
               <h2>{f.secondHeading}</h2>

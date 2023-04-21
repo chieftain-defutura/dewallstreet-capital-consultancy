@@ -10,12 +10,26 @@ const ImproveBuisness = () => {
       <h1>How our work improves your business.</h1>
       <div className={styles.improve_buisness_content}>
         <div className={styles.details}>
-          <Image src={Before} alt="" width={600} height={300} />
+          <Image
+            src={Before}
+            alt=""
+            width={600}
+            height={300}
+            quality={75}
+            priority
+          />
           <p>Before</p>
         </div>
 
         <div className={styles.details}>
-          <Image src={After} alt="" width={600} height={300} />
+          <Image
+            src={After}
+            alt=""
+            width={600}
+            height={300}
+            quality={75}
+            priority
+          />
           <p>After</p>
         </div>
       </div>

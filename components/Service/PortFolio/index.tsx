@@ -10,7 +10,7 @@ import styles from "./PortFolio.module.scss";
 const PortFolio: React.FC = () => {
   return (
     <div className={styles.portFolioWrapper} id="portfolio">
-      <div className="mx">
+      <div>
         <div className={styles.portFolioHead}>
           <p>PORTFOLIO</p>
         </div>
@@ -67,11 +67,12 @@ const PortFolio: React.FC = () => {
                   alt=""
                   width={295}
                   height={374}
+                  quality={75}
+                  priority
                 />
               </div>
             </div>
-
-            <div className={styles.webDevelopmentContainer}>
+            <div className={styles.webDevelopmentImages}>
               <div className={styles.webDevelopmentImgFlex}>
                 <div>
                   <Image
@@ -79,6 +80,8 @@ const PortFolio: React.FC = () => {
                     alt=""
                     width={259}
                     height={178}
+                    quality={75}
+                    priority
                   />
                 </div>
                 <div>
@@ -87,6 +90,8 @@ const PortFolio: React.FC = () => {
                     alt=""
                     width={259}
                     height={178}
+                    quality={75}
+                    priority
                   />
                 </div>
               </div>
@@ -96,6 +101,8 @@ const PortFolio: React.FC = () => {
                   alt=""
                   width={295}
                   height={374}
+                  quality={75}
+                  priority
                 />
               </div>
             </div>

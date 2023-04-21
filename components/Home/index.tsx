@@ -6,7 +6,7 @@ import styles from "./Home.module.scss";
 import Arrow from "../../public/assets/images/external-link.png";
 import classnames from "classnames";
 import SplashScreen from "../SplashScreen";
-const HomeContent = () => {
+const HomeContent: React.FC = () => {
   return (
     <>
       <SplashScreen />
@@ -34,6 +34,8 @@ const HomeContent = () => {
                   alt="rollarroe"
                   width={100}
                   height={96}
+                  quality={75}
+                  priority
                 />
                 <h1>Z</h1>
               </div>
@@ -58,6 +60,8 @@ const HomeContent = () => {
                         alt="externallimk"
                         layout="fill"
                         className={styles.image}
+                        quality={75}
+                        priority
                       />
                     </div>
                   </button>
@@ -74,6 +78,8 @@ const HomeContent = () => {
                         alt="HexagonImgOne"
                         width={101}
                         height={118}
+                        quality={75}
+                        priority
                       />
                       <div
                         className={classnames(
@@ -100,6 +106,8 @@ const HomeContent = () => {
                         alt="HexagonImgOne"
                         width={101}
                         height={118}
+                        quality={75}
+                        priority
                       />
                       <div
                         className={classnames(
@@ -126,6 +134,8 @@ const HomeContent = () => {
                         alt="HexagonImgOne"
                         width={101}
                         height={118}
+                        quality={75}
+                        priority
                       />
 
                       <div
@@ -153,6 +163,8 @@ const HomeContent = () => {
                         alt="HexagonImgOne"
                         width={101}
                         height={118}
+                        quality={75}
+                        priority
                       />
 
                       <div
@@ -179,6 +191,8 @@ const HomeContent = () => {
                         alt="HexagonImgOne"
                         width={101}
                         height={118}
+                        quality={75}
+                        priority
                       />
 
                       <div
@@ -200,6 +214,8 @@ const HomeContent = () => {
                     alt="service"
                     width={130}
                     height={200}
+                    quality={75}
+                    priority
                   />
                   <div className={styles.hexagon_add}>
                     <h3>48+</h3>
@@ -217,6 +233,8 @@ const HomeContent = () => {
                   alt="hexagon"
                   width={135}
                   height={160}
+                  quality={75}
+                  priority
                 />
                 <div className={styles.hexagon_add}>
                   <h3>48+</h3>
@@ -239,6 +257,8 @@ const HomeContent = () => {
                   alt="HexagonImgOne"
                   width={101}
                   height={118}
+                  quality={75}
+                  priority
                 />
                 <div
                   className={classnames(styles.hexagon, styles.firstHexagon)}
@@ -262,6 +282,8 @@ const HomeContent = () => {
                   alt="HexagonImgOne"
                   width={101}
                   height={118}
+                  quality={75}
+                  priority
                 />
 
                 <div
@@ -288,6 +310,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -315,6 +339,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -343,6 +369,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -370,6 +398,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -399,6 +429,8 @@ const HomeContent = () => {
                   alt="HexagonImgOne"
                   width={101}
                   height={118}
+                  quality={75}
+                  priority
                 />
 
                 <div
@@ -423,6 +455,8 @@ const HomeContent = () => {
                   alt="HexagonImgOne"
                   width={101}
                   height={118}
+                  quality={75}
+                  priority
                 />
 
                 <div
@@ -449,6 +483,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -475,6 +511,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -503,6 +541,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -529,6 +569,8 @@ const HomeContent = () => {
                       alt="HexagonImgOne"
                       width={101}
                       height={118}
+                      quality={75}
+                      priority
                     />
 
                     <div
@@ -558,6 +600,8 @@ const HomeContent = () => {
                   alt="HexagonImgOne"
                   width={101}
                   height={118}
+                  quality={75}
+                  priority
                 />
 
                 <div
@@ -581,6 +625,8 @@ const HomeContent = () => {
                   alt="HexagonImgOne"
                   width={101}
                   height={118}
+                  quality={75}
+                  priority
                 />
 
                 <div
@@ -602,6 +648,8 @@ const HomeContent = () => {
                   alt="externallimk"
                   layout="fill"
                   className={styles.image}
+                  quality={75}
+                  priority
                 />
               </div>
             </button>

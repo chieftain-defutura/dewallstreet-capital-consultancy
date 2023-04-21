@@ -36,6 +36,8 @@ export default function UserExperienceStudio() {
                         alt="icon"
                         width={36}
                         height={36}
+                        priority
+                        quality={75}
                       />
                     </div>
                     <h3>STARTUP</h3>
@@ -49,6 +51,8 @@ export default function UserExperienceStudio() {
                   alt="UserExperienceStudioImg"
                   layout="fill"
                   className={styles.image}
+                  quality={75}
+                  priority
                 />
               </div>
               <Link href={"/insights"}>
@@ -77,6 +81,8 @@ export default function UserExperienceStudio() {
                     alt="service"
                     width={20}
                     height={20}
+                    quality={75}
+                    priority
                   />
                   <h3>STARTUP</h3>
                   <h3>UX SERVICES</h3>
@@ -89,6 +95,8 @@ export default function UserExperienceStudio() {
                 alt="UserExperienceImgOne"
                 width={195}
                 height={243}
+                quality={75}
+                priority
               />
             </div>
           </div>
@@ -105,6 +113,8 @@ export default function UserExperienceStudio() {
                 alt="UserExperienceImgTwo"
                 width={202}
                 height={227}
+                quality={75}
+                priority
               />
             </div>
             <div className={styles.content_one}>
@@ -115,6 +125,8 @@ export default function UserExperienceStudio() {
                     alt="enterprise"
                     width={20}
                     height={20}
+                    quality={75}
+                    priority
                   />
                   <h3>ENTERPRISE</h3>
                   <h3>UX SERVICES</h3>

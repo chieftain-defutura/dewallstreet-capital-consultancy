@@ -14,6 +14,8 @@ const Company = () => {
               alt="crypto"
               width={278}
               height={48}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -22,6 +24,8 @@ const Company = () => {
               alt="dify"
               width={174}
               height={52}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -30,6 +34,8 @@ const Company = () => {
               alt="hod"
               width={244}
               height={51}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -38,6 +44,8 @@ const Company = () => {
               alt="rtra"
               width={174}
               height={52}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -46,6 +54,8 @@ const Company = () => {
               alt="valifi"
               width={225}
               height={63}
+              quality={75}
+              priority
             />
           </div>
         </div>
@@ -56,6 +66,8 @@ const Company = () => {
               alt="crypto"
               width={278}
               height={48}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -64,6 +76,8 @@ const Company = () => {
               alt="dify"
               width={174}
               height={52}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -72,6 +86,8 @@ const Company = () => {
               alt="hod"
               width={244}
               height={51}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -80,6 +96,8 @@ const Company = () => {
               alt="rtra"
               width={174}
               height={52}
+              quality={75}
+              priority
             />
           </div>
           <div className={styles.logo}>
@@ -88,6 +106,8 @@ const Company = () => {
               alt="valifi"
               width={225}
               height={63}
+              quality={75}
+              priority
             />
           </div>
         </div>

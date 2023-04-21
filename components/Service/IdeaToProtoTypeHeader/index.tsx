@@ -18,6 +18,8 @@ const IdeaToProtoTypeHeader: React.FC = () => {
                   alt=""
                   layout="fill"
                   className={styles.image}
+                  quality={75}
+                  priority
                 />
               </div>
               <div className={styles.uxBox}>
@@ -47,7 +49,7 @@ const IdeaToProtoTypeHeader: React.FC = () => {
             <a href="#portfolio">PORTFOLIO</a>
           </li>
           <li>
-            <a href="#benefits">BENEFITS</a>
+            <a href="#benifits">BENEFITS</a>
           </li>
           <li>
             <a href="#testimonials">TESTIMONIALS</a>

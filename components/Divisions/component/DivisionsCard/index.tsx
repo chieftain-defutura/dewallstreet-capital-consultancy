@@ -4,24 +4,33 @@ import Image from "next/image";
 import styles from "./DivisionsCard.module.scss";
 import Link from "next/link";
 
-const DivisionsCard = () => {
+const DivisionsCard: React.FC = () => {
   return (
     <>
       <div className={styles.division_card}>
         {DivisionsData.map((f, i) => (
           <div key={i} className={styles.card}>
             <div className={styles.first_layer}>
-              <Image src={f.icons} alt="icon" width={32} height={32} />
+              <Image
+                src={f.icons}
+                alt="icon"
+                width={32}
+                height={32}
+                quality={75}
+                priority
+              />
               <Image
                 src={"/assets/icons/dewall-logo.svg"}
                 alt="logo"
                 width={160}
                 height={21}
+                quality={75}
+                priority
               />
               <p>{f.title}</p>
               <span>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </span>
             </div>
             <div className={styles.second_layer_parent}>
@@ -40,6 +49,8 @@ const DivisionsCard = () => {
                         alt="icon"
                         width={20}
                         height={20}
+                        quality={75}
+                        priority
                       />
 
                       <p>{f.title}</p>

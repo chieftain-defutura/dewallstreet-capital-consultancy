@@ -10,11 +10,16 @@
     left: 0;
     z-index: -1;
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: calc(100vh - 70px);
+    @media (max-width: 1024px) {
+      max-height: 100vh;
+    }
 
     video {
       object-fit: cover;
-      height: 100vh;
+      height: 100%;
+      max-height: 100vh;
       width: 100%;
     }
     .overlay {
@@ -24,11 +29,9 @@
       left: 0;
       right: 0;
       z-index: 2;
-      height: 100vh;
+      height: 100%;
+      max-height: 100vh;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-      // @media (max-width: 1024px) {
-      //   height: 300vh;
-      // }
     }
   }
   .home_wrapper {
@@ -47,8 +50,12 @@
         font-size: 40px;
         font-weight: 100;
         letter-spacing: -0.06em;
+        @media (max-width: 1024px) {
+          margin-top: 30px;
+        }
+
         @media (max-width: 645px) {
-          font-size: 34px;
+          font-size: 38px;
         }
         @media (max-width: 450px) {
           font-size: 28px;
@@ -64,11 +71,19 @@
         margin-top: 16px;
         @media (max-width: 1024px) {
           justify-content: center;
+          margin-top: 2px;
         }
+        @media (max-width: 768px) {
+          margin-top: 30px;
+        }
+
         h1 {
           font-size: 109px;
+          @media (max-width: 1024px) {
+            font-size: 98px;
+          }
           @media (max-width: 645px) {
-            font-size: 70px;
+            font-size: 80px;
           }
         }
         img {
@@ -95,11 +110,11 @@
         font-size: 16px;
       }
       .visit_btn {
-        margin-top: 64px;
+        margin-top: 20px;
         @media (max-width: 1024px) {
           display: flex;
           justify-content: center;
-          margin-top: 42px;
+          margin-top: 28px;
         }
 
         button {
@@ -229,6 +244,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
+      // margin-top: 100px;
       .background_img {
         // margin: 125px 3px;
         position: absolute;
@@ -236,6 +252,9 @@
         top: -30%;
         @media (max-width: 475px) {
           right: 30%;
+        }
+        @media (max-width: 415px) {
+          margin-top: 75px;
         }
 
         .hexagon_add {
@@ -270,27 +289,27 @@
   flex-direction: column;
   flex-wrap: wrap;
   // position: relative;
-  padding-top: 250px;
+  padding-top: 115px;
   // padding: 40px;
 
   @media (min-width: 768px) {
     display: none;
   }
   @media (max-width: 645px) {
-    margin-top: 40px;
+    margin-top: 80px;
   }
-  @media (max-width: 415px) {
-    padding-top: 250px;
-  }
-  @media (max-width: 376px) {
-    margin-top: 0px;
-  }
-  @media (max-width: 393px) {
-    margin-top: -50px;
-  }
-  @media (max-width: 361px) {
-    margin-top: -100px;
-  }
+  // @media (max-width: 415px) {
+  //   padding-top: 250px;
+  // }
+  // @media (max-width: 376px) {
+  //   margin-top: 0px;
+  // }
+  // @media (max-width: 393px) {
+  //   margin-top: -50px;
+  // }
+  // @media (max-width: 361px) {
+  //   margin-top: -100px;
+  // }
 
   .hexagonArea {
     display: flex;

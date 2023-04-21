@@ -27,6 +27,8 @@ export default function Impact() {
                   alt="members"
                   width={583}
                   height={496}
+                  quality={75}
+                  priority
                 />
 
                 <div className={styles.group_img}>
@@ -35,6 +37,8 @@ export default function Impact() {
                     alt="members"
                     width={310}
                     height={264}
+                    quality={75}
+                    priority
                   />
                 </div>
                 <div className={styles.explain}>
