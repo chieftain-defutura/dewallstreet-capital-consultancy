@@ -31,7 +31,14 @@ const Collaborate: React.FC<ICollaborate> = ({ title, textAlign, heading }) => {
               className={styles.detail}
               style={{ textAlign: textAlign }}
             >
-              <Image src={f.icon} alt="icon" width={64} height={64} />
+              <Image
+                src={f.icon}
+                alt="icon"
+                width={64}
+                height={64}
+                quality={75}
+                priority
+              />
               <h2>{f.title}</h2>
               <p>{f.content}</p>
             </div>

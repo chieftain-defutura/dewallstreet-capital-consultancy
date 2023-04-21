@@ -11,12 +11,21 @@ const DivisionsCard: React.FC = () => {
         {DivisionsData.map((f, i) => (
           <div key={i} className={styles.card}>
             <div className={styles.first_layer}>
-              <Image src={f.icons} alt="icon" width={32} height={32} />
+              <Image
+                src={f.icons}
+                alt="icon"
+                width={32}
+                height={32}
+                quality={75}
+                priority
+              />
               <Image
                 src={"/assets/icons/dewall-logo.svg"}
                 alt="logo"
                 width={160}
                 height={21}
+                quality={75}
+                priority
               />
               <p>{f.title}</p>
               <span>
@@ -40,6 +49,8 @@ const DivisionsCard: React.FC = () => {
                         alt="icon"
                         width={20}
                         height={20}
+                        quality={75}
+                        priority
                       />
 
                       <p>{f.title}</p>

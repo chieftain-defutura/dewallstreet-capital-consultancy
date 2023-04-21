@@ -70,7 +70,14 @@ const SplashScreen: React.FC = () => {
       {show && (
         <div className={styles.splashscreen}>
           <div className={styles.splashscreenLogo}>
-            <Image src={logo} alt="" layout="fill" className={styles.image} />
+            <Image
+              src={logo}
+              alt=""
+              layout="fill"
+              className={styles.image}
+              quality={75}
+              priority
+            />
           </div>
           <div className={styles.acessingPort}>
             <p>acessing port.</p>

@@ -10,6 +10,8 @@ const DivisionsHeader = () => {
           alt="Rocket"
           width={100}
           height={100}
+          quality={75}
+          priority
         />
         <h1>
           The <span> success formula </span> we invented for any business,

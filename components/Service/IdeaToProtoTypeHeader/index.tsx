@@ -18,6 +18,8 @@ const IdeaToProtoTypeHeader: React.FC = () => {
                   alt=""
                   layout="fill"
                   className={styles.image}
+                  quality={75}
+                  priority
                 />
               </div>
               <div className={styles.uxBox}>

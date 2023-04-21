@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
   const renderAccess = (
     <div className={styles.access} onClick={() => setOpenClose(false)}>
-      <Image src={Access} alt="" width={50} height={50} />
+      <Image src={Access} alt="" width={50} height={50} quality={75} priority />
       <p>Access</p>
     </div>
   );
@@ -47,7 +47,16 @@ const Header: React.FC = () => {
       <header className={styles.header}>
         <div className={styles.content}>
           <div className={styles.logo}>
-            <Image src={Logo} alt="" width={300} height={42} />
+            <Link href="/">
+              <Image
+                src={Logo}
+                alt=""
+                width={300}
+                height={42}
+                quality={75}
+                priority
+              />
+            </Link>
           </div>
           {renderLinks}
         </div>
@@ -60,6 +69,8 @@ const Header: React.FC = () => {
               alt=""
               width={28}
               height={28}
+              quality={75}
+              priority
             />
           ) : (
             <Image
@@ -68,6 +79,8 @@ const Header: React.FC = () => {
               alt=""
               width={28}
               height={28}
+              quality={75}
+              priority
             />
           )}
         </div>

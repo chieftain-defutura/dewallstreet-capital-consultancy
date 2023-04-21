@@ -78,6 +78,9 @@
   button {
     width: 100%;
     margin-bottom: 20px;
+    @media (max-width: 425px) {
+      padding: 9px 32px;
+    }
   }
 
   @media (max-width: 768px) {
