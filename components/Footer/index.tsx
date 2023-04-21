@@ -15,7 +15,7 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   return (
     <div className={styles.footerWrapper}>
-      <div className="mx">
+      <div>
         <div className={styles.footerContainer}>
           <div>
             <div className={styles.firstContent}>
