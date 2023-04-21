@@ -7,8 +7,6 @@ import ApproachOurProject from "../../../../../components/Service/ApproachOurPro
 import Collaborate from "../../../../../components/Collabrate";
 import PortFolio from "../../../../../components/Service/PortFolio";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function IdeaToProtoType() {
   return (
     <>
