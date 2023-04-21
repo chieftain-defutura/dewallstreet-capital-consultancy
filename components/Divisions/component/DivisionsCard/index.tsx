@@ -39,7 +39,7 @@ const DivisionsCard: React.FC = () => {
                   <Link
                     href={
                       f.path === "divisions/user-experience-studio"
-                        ? "/user-interface-studio"
+                        ? "/divisions/user-interface-studio"
                         : "/insights"
                     }
                   >

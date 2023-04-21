@@ -27,7 +27,9 @@ export default function UserExperienceStudio() {
               <h3>We build outcome focused designs, that drives businesses.</h3>
             </div>
             <div className={styles.user_experience_flexContent}>
-              <Link href={"/startup-ux-services"}>
+              <Link
+                href={"/divisions/user-interface-studio/startup-ux-services"}
+              >
                 <div className={styles.services_icons}>
                   <div>
                     <div className={styles.imageContent}>

@@ -257,15 +257,16 @@ const Footer: React.FC = () => {
             </div>
             <div className={styles.appointmentMedia}>
               <h2>Schedule an appointment</h2>
-
-              <Image
-                src={Rigtarrow}
-                alt=""
-                width={28}
-                height={28}
-                quality={75}
-                priority
-              />
+              <Link href="https://calendly.com/defutura/30min">
+                <Image
+                  src={Rigtarrow}
+                  alt=""
+                  width={28}
+                  height={28}
+                  quality={75}
+                  priority
+                />
+              </Link>
             </div>
             <div className={styles.copyRightContent}>
               <div className={styles.terms}>
