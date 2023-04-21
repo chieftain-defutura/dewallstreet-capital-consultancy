@@ -27,7 +27,7 @@ export const IStartUpUxServices = [
     title: "For startups in idea stage.",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    button: "Visit Site",
+    button: "Discover",
     // path: "landingfunnel",
     path: "insights",
   },
