@@ -1,11 +1,11 @@
 "use client";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import IdeaToProtoTypeHeader from "../../components/Service/IdeaToProtoTypeHeader";
-import InterActiveProtoType from "../../components/Service/InterActiveProtoType";
-import ApproachOurProject from "../../components/Service/ApproachOurProject";
-import Collaborate from "../../components/Collabrate";
-import PortFolio from "../../components/Service/PortFolio";
+import IdeaToProtoTypeHeader from "../../../../../components/Service/IdeaToProtoTypeHeader";
+import InterActiveProtoType from "../../../../../components/Service/InterActiveProtoType";
+import ApproachOurProject from "../../../../../components/Service/ApproachOurProject";
+import Collaborate from "../../../../../components/Collabrate";
+import PortFolio from "../../../../../components/Service/PortFolio";
 
 const inter = Inter({ subsets: ["latin"] });
 

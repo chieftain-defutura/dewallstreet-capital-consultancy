@@ -1,11 +1,11 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import { Inter } from "next/font/google";
-import { IStartUpUxServices } from "../data/startup";
+import { IStartUpUxServices } from "../../../../data/startup";
 import Image from "next/image";
-import styles from "../styles/startup.module.scss";
+import styles from "../../../../styles/startup.module.scss";
 import Link from "next/link";
-import Button from "../../components/Button";
+import Button from "../../../../../components/Button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -95,7 +95,9 @@ export default function StartupUxServices() {
                         <div className={styles.prototype_content}>
                           <h5>{f.title}</h5>
                           <p>{f.description}</p>
-                          <Link href={`/${f.path}`}>
+                          <Link
+                            href={`/divisions/user-interface-studio/startup-ux-services/${f.path}`}
+                          >
                             <Button varient="primary">{f.button}</Button>
                           </Link>
                         </div>

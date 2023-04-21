@@ -4,7 +4,6 @@ import ChevronRight from "../../../public/assets/icons/chevron-right.png";
 import styles from "./IdeaToProtoTypeHeader.module.scss";
 import Button from "../../Button";
 import Link from "next/link";
-import { PopupButton } from "react-calendly";
 const IdeaToProtoTypeHeader: React.FC = () => {
   return (
     <div className={styles.ideaToProtoTypeWrapper}>
@@ -57,18 +56,9 @@ const IdeaToProtoTypeHeader: React.FC = () => {
         </div>
 
         <div className={styles.scheduleBtn}>
-          {/* <Button varient="primary">Schedule an appointment</Button> */}
-          <PopupButton
-            url="https://calendly.com/defutura/30min"
-            rootElement={document.getElementById("root") as HTMLElement}
-            text="Schedule an appointment"
-            styles={{
-              background: " #00ce53",
-              color: "#ffffff",
-              outline: "none",
-              border: "none",
-            }}
-          />
+          <Link href="https://calendly.com/defutura/30min">
+            <Button varient="primary">Schedule an appointment</Button>
+          </Link>
         </div>
       </div>
     </div>
