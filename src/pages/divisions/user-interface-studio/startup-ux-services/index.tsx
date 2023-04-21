@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React from "react";
 import { Inter } from "next/font/google";
 import { IStartUpUxServices } from "../../../../data/startup";
 import Image from "next/image";
