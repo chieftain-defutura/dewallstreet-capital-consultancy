@@ -75,13 +75,22 @@ const Header: React.FC = () => {
       <AnimatePresence>
         {openClose && (
           <motion.div
-            className={styles.bar}
-            animate={{ right: 0, transitionDelay: "-200ms" }}
-            exit={{ right: -300 }}
-            initial={{ right: -300 }}
+            className={styles.sidebar_backdrop}
+            onClick={() => setOpenClose(false)}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
           >
-            {renderLinks}
-            <div className={styles.flex}>{renderAccess}</div>
+            <motion.div
+              className={styles.bar}
+              onClick={(e) => e.stopPropagation()}
+              animate={{ right: 0, transitionDelay: "-200ms" }}
+              exit={{ right: -300 }}
+              initial={{ right: -300 }}
+            >
+              {renderLinks}
+              <div className={styles.flex}>{renderAccess}</div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

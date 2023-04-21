@@ -75,29 +75,55 @@ export const DivisionsData = [
       },
     ],
   },
+  // {
+  //   icons: "/assets/icons/boards.svg",
+  //   title: "boards",
+  //   content: [
+  //     {
+  //       title: "HUMAN CAPITAL BOARD",
+  //       path: "divisions/human-capital-board",
+  //     },
+  //     {
+  //       title: "WORKFORCE TRANSFORMATION BOARD",
+  //       path: "divisions/workforce-transformation-board",
+  //     },
+  //     {
+  //       title: "OPERATIONAL EFFICACY BOARD",
+  //       path: "divisions/oprational-efficacy-board",
+  //     },
+  //     {
+  //       title: "SYSTEMATIC GOVERNANCE BOARD",
+  //       path: "divisions/systematic-governance-board",
+  //     },
+  //     {
+  //       title: "BUSINESS APPROACH BOARD",
+  //       path: "business-approach-board",
+  //     },
+  //   ],
+  // },
   {
     icons: "/assets/icons/boards.svg",
-    title: "boards",
+    title: "panels",
     content: [
       {
-        title: "HUMAN CAPITAL BOARD",
-        path: "divisions/human-capital-board",
+        title: "HUMAN CAPITAL PANEL",
+        path: "divisions/human-capital-panel",
       },
       {
-        title: "WORKFORCE TRANSFORMATION BOARD",
-        path: "divisions/workforce-transformation-board",
+        title: "WORKFORCE TRANSFORMATION PANEL",
+        path: "divisions/workforce-transformation-panel",
       },
       {
-        title: "OPERATIONAL EFFICACY BOARD",
-        path: "divisions/oprational-efficacy-board",
+        title: "OPERATIONAL EFFICACY PANEL",
+        path: "divisions/oprational-efficacy-panel",
       },
       {
-        title: "SYSTEMATIC GOVERNANCE BOARD",
-        path: "divisions/systematic-governance-board",
+        title: "SYSTEMATIC GOVERNANCE PANEL",
+        path: "divisions/systematic-governance-panel",
       },
       {
-        title: "BUSINESS APPROACH BOARD",
-        path: "business-approach-board",
+        title: "BUSINESS APPROACH PANEL",
+        path: "business-approach-panel",
       },
     ],
   },
