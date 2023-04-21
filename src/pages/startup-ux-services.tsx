@@ -19,7 +19,7 @@ export default function StartupUxServices() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className={styles.mx}>
+        <div>
           <div className={styles.startUp_ux_wrapper}>
             <div className={styles.startUp_ux_container}>
               <div className={styles.first_content}>

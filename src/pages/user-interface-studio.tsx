@@ -36,6 +36,8 @@ export default function UserExperienceStudio() {
                         alt="icon"
                         width={36}
                         height={36}
+                        priority
+                        quality={75}
                       />
                     </div>
                     <h3>STARTUP</h3>
