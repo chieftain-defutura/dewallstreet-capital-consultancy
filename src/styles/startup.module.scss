@@ -192,6 +192,8 @@
               color: #fff;
               font-size: 14px;
               margin-top: 18px;
+              white-space: nowrap;
+              font-family: var(--font-medium);
             }
           }
         }
@@ -235,6 +237,9 @@
         @media (max-width: 460px) {
           font-size: 14px;
         }
+        @media (max-width: 415px) {
+          font-size: 12px;
+        }
       }
       h5 {
         font-size: 20px;
@@ -243,16 +248,24 @@
         @media (max-width: 460px) {
           font-size: 18px;
         }
+        @media (max-width: 415px) {
+          font-size: 16px;
+        }
       }
       button {
         margin-top: 16px;
+        font-family: var(--font-medium);
+        white-space: nowrap;
         @media (max-width: 500px) {
           max-width: 250px;
           width: 100%;
         }
         @media (max-width: 460px) {
           font-size: 14px;
-          padding: 6px 0px;
+          padding: 8px 25px;
+        }
+        @media (max-width: 415px) {
+          font-size: 12px;
         }
       }
       @media (min-width: 1124px) {
