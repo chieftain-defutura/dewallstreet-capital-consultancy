@@ -35,10 +35,12 @@ export default function Impact() {
                   <Image
                     src={"/assets/images/group-img.png"}
                     alt="members"
-                    width={310}
-                    height={264}
+                    // width={900}
+                    // height={264}
+                    layout="fill"
                     quality={75}
                     priority
+                    className={styles.image}
                   />
                 </div>
                 <div className={styles.explain}>

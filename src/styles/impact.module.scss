@@ -40,10 +40,16 @@
           position: relative;
           align-items: center;
           justify-content: center;
-
-          img {
-            width: 100%;
-            height: 100%;
+          width: 100%;
+          > div {
+            position: unset !important;
+          }
+          .image {
+            object-fit: contain;
+            max-width: 350px !important;
+            width: 100% !important;
+            position: relative !important;
+            height: unset !important;
           }
         }
         .member {
