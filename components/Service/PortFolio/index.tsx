@@ -70,8 +70,7 @@ const PortFolio: React.FC = () => {
                 />
               </div>
             </div>
-
-            <div className={styles.webDevelopmentContainer}>
+            <div className={styles.webDevelopmentImages}>
               <div className={styles.webDevelopmentImgFlex}>
                 <div>
                   <Image

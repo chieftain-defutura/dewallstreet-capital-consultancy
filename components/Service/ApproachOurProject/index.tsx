@@ -93,6 +93,8 @@ const ApproachOurProject: React.FC = () => {
                   width={24}
                   height={24}
                   className={styles.image}
+                  priority
+                  quality={75}
                 />
               </div>
 
@@ -109,6 +111,8 @@ const ApproachOurProject: React.FC = () => {
                                 alt={f.image.alt}
                                 className={styles.image}
                                 layout="fill"
+                                priority
+                                quality={75}
                               />
                             </div>
                             <div className={styles.approachourContent}>
@@ -128,7 +132,14 @@ const ApproachOurProject: React.FC = () => {
                 style={{ cursor: "pointer" }}
                 onClick={() => ref.current?.slickNext()}
               >
-                <Image src={ArrowRight} alt="" width={24} height={24} />
+                <Image
+                  src={ArrowRight}
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                  quality={75}
+                />
               </div>
             </div>
           )}
@@ -146,6 +157,8 @@ const ApproachOurProject: React.FC = () => {
                   width={24}
                   height={24}
                   className={styles.image}
+                  priority
+                  quality={75}
                 />
               </div>
 
@@ -162,6 +175,8 @@ const ApproachOurProject: React.FC = () => {
                                 alt={f.image.alt}
                                 className={styles.image}
                                 layout="fill"
+                                priority
+                                quality={75}
                               />
                             </div>
                             <div className={styles.approachourContent}>
@@ -181,7 +196,14 @@ const ApproachOurProject: React.FC = () => {
                 style={{ cursor: "pointer" }}
                 onClick={() => ref.current?.slickNext()}
               >
-                <Image src={ArrowRight} alt="" width={24} height={24} />
+                <Image
+                  src={ArrowRight}
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                  quality={75}
+                />
               </div>
             </div>
           )}
@@ -199,6 +221,8 @@ const ApproachOurProject: React.FC = () => {
                   width={24}
                   height={24}
                   className={styles.image}
+                  priority
+                  quality={75}
                 />
               </div>
 
@@ -215,6 +239,8 @@ const ApproachOurProject: React.FC = () => {
                                 alt={f.image.alt}
                                 className={styles.image}
                                 layout="fill"
+                                priority
+                                quality={75}
                               />
                             </div>
                             <div className={styles.approachourContent}>
@@ -234,7 +260,14 @@ const ApproachOurProject: React.FC = () => {
                 style={{ cursor: "pointer" }}
                 onClick={() => ref.current?.slickNext()}
               >
-                <Image src={ArrowRight} alt="" width={24} height={24} />
+                <Image
+                  src={ArrowRight}
+                  alt=""
+                  width={24}
+                  height={24}
+                  priority
+                  quality={75}
+                />
               </div>
             </div>
           )}
