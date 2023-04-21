@@ -241,17 +241,13 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      // margin-top: 100px;
       .background_img {
-        // margin: 125px 3px;
+        margin: 60px 3px;
         position: absolute;
         right: 38%;
         top: -30%;
         @media (max-width: 475px) {
-          right: 30%;
-        }
-        @media (max-width: 415px) {
-          padding-top: 75px;
+          right: 32%;
         }
 
         .hexagon_add {
@@ -259,7 +255,7 @@
           transition: 0.5s;
           position: absolute;
           top: 45px;
-          right: 35px;
+          right: 32px;
           text-align: center;
 
           h3 {
@@ -286,15 +282,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   // position: relative;
-  padding-top: 115px;
+  padding-top: 200px;
   // padding: 40px;
 
   @media (min-width: 768px) {
     display: none;
   }
-  @media (max-width: 645px) {
-    margin-top: 80px;
-  }
+  // @media (max-width: 645px) {
+  //   margin-top: 32px;
+  // }
   // @media (max-width: 415px) {
   //   padding-top: 250px;
   // }
