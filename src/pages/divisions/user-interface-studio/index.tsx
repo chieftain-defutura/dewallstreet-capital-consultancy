@@ -76,7 +76,9 @@ export default function UserExperienceStudio() {
 
           <div className={styles.UserExperience_content_One}>
             <div className={styles.content_one}>
-              <Link href={"/startup-ux-services"}>
+              <Link
+                href={"/divisions/user-interface-studio/startup-ux-services"}
+              >
                 <div>
                   <Image
                     src={"/assets/icons/uxService.svg"}
