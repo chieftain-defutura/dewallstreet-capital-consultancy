@@ -1,7 +1,8 @@
 .home_container {
   position: relative;
   margin-top: 67px;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 
   .background_clip {
     position: absolute;
@@ -10,14 +11,11 @@
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100%;
-    height: 100vh;
 
     video {
       object-fit: cover;
-      height: 100%;
-      min-height: 100vh;
       width: 100%;
+      height: 100%;
     }
     .overlay {
       position: absolute;
@@ -26,8 +24,6 @@
       left: 0;
       right: 0;
       z-index: 2;
-      height: 100%;
-      min-height: 100vh;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
   }
@@ -56,6 +52,7 @@
         }
         @media (max-width: 450px) {
           font-size: 28px;
+          margin-top: 50px;
         }
       }
       @media (max-width: 1024px) {
@@ -242,7 +239,7 @@
       align-items: center;
       position: relative;
       .background_img {
-        margin: 60px 3px;
+        // margin: 60px 3px;
         position: absolute;
         right: 38%;
         top: -30%;
