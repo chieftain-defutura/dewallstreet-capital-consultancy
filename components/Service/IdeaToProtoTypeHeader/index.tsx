@@ -47,7 +47,7 @@ const IdeaToProtoTypeHeader: React.FC = () => {
             <a href="#portfolio">PORTFOLIO</a>
           </li>
           <li>
-            <a href="#benefits">BENEFITS</a>
+            <a href="#benifits">BENEFITS</a>
           </li>
           <li>
             <a href="#testimonials">TESTIMONIALS</a>
