@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./DivisionsCard.module.scss";
 import Link from "next/link";
 
-const DivisionsCard = () => {
+const DivisionsCard: React.FC = () => {
   return (
     <>
       <div className={styles.division_card}>
