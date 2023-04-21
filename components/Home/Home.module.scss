@@ -241,7 +241,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      margin-top: 100px;
+      // margin-top: 100px;
       .background_img {
         // margin: 125px 3px;
         position: absolute;
@@ -249,6 +249,9 @@
         top: -30%;
         @media (max-width: 475px) {
           right: 30%;
+        }
+        @media (max-width: 415px) {
+          margin-top: 75px;
         }
 
         .hexagon_add {
@@ -290,20 +293,20 @@
     display: none;
   }
   @media (max-width: 645px) {
-    margin-top: 40px;
+    margin-top: 80px;
   }
-  @media (max-width: 415px) {
-    padding-top: 250px;
-  }
-  @media (max-width: 376px) {
-    margin-top: 0px;
-  }
-  @media (max-width: 393px) {
-    margin-top: -50px;
-  }
-  @media (max-width: 361px) {
-    margin-top: -100px;
-  }
+  // @media (max-width: 415px) {
+  //   padding-top: 250px;
+  // }
+  // @media (max-width: 376px) {
+  //   margin-top: 0px;
+  // }
+  // @media (max-width: 393px) {
+  //   margin-top: -50px;
+  // }
+  // @media (max-width: 361px) {
+  //   margin-top: -100px;
+  // }
 
   .hexagonArea {
     display: flex;
