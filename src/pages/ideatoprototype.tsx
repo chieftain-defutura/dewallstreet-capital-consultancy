@@ -5,7 +5,7 @@ import IdeaToProtoTypeHeader from "../../components/Service/IdeaToProtoTypeHeade
 import InterActiveProtoType from "../../components/Service/InterActiveProtoType";
 import ApproachOurProject from "../../components/Service/ApproachOurProject";
 import Collaborate from "../../components/Collabrate";
-import PortFolio from "../../components/Service/Portfolio";
+import PortFolio from "../../components/Service/PortFolio";
 
 const inter = Inter({ subsets: ["latin"] });
 
