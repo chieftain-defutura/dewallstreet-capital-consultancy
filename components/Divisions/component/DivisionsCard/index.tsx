@@ -20,8 +20,8 @@ const DivisionsCard = () => {
               />
               <p>{f.title}</p>
               <span>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </span>
             </div>
             <div className={styles.second_layer_parent}>
