@@ -59,9 +59,13 @@ const IdeaToProtoTypeHeader: React.FC = () => {
         </div>
 
         <div className={styles.scheduleBtn}>
-          <Link href="https://calendly.com/defutura/30min">
+          <a
+            href="https://calendly.com/defutura/30min"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button varient="primary">Schedule an appointment</Button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

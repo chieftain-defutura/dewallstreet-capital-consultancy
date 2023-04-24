@@ -177,7 +177,11 @@ const Footer: React.FC = () => {
                 <div className={styles.rightArrow}>
                   <h2>Schedule an appointment</h2>
 
-                  <div>
+                  <a
+                    href="https://calendly.com/defutura/30min"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       src={Rigtarrow}
                       alt=""
@@ -186,7 +190,7 @@ const Footer: React.FC = () => {
                       quality={75}
                       priority
                     />
-                  </div>
+                  </a>
                 </div>
                 <div className={styles.follow}>
                   <h5>Follow Us On</h5>
@@ -257,7 +261,11 @@ const Footer: React.FC = () => {
             </div>
             <div className={styles.appointmentMedia}>
               <h2>Schedule an appointment</h2>
-              <Link href="https://calendly.com/defutura/30min">
+              <a
+                href="https://calendly.com/defutura/30min"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={Rigtarrow}
                   alt=""
@@ -266,7 +274,7 @@ const Footer: React.FC = () => {
                   quality={75}
                   priority
                 />
-              </Link>
+              </a>
             </div>
             <div className={styles.copyRightContent}>
               <div className={styles.terms}>
