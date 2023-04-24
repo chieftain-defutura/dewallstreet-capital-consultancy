@@ -9,7 +9,10 @@ const IdeaToProtoTypeHeader: React.FC = () => {
     <div className={styles.ideaToProtoTypeWrapper}>
       <div className={styles.ideaToProtoTypeContainer}>
         <div className={styles.prototypeContent}>
-          <Link href={"/startup-ux-services"} style={{ color: "#fff" }}>
+          <Link
+            href={"/divisions/user-interface-studio/startup-ux-services"}
+            style={{ color: "#fff" }}
+          >
             <div className={styles.firstItem}>
               <div className={styles.imageContainer}>
                 <Image
