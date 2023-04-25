@@ -42,7 +42,7 @@ const IdeaToProtoTypeHeader: React.FC = () => {
 
         <div className={styles.navigation}>
           <li>
-            <a href="#over-view">OVER VIEW</a>
+            <a href="#over-view">OVERVIEW</a>
           </li>
           <li>
             <a href="#approach">APPROACH</a>

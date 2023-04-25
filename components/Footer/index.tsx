@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                 </Link>
               </div>
               <div className={styles.firm}>
-                <h5>Wings</h5>
+                <h5>Divisions</h5>
                 <Link href="/bureaus">
                   <p>Bureaus</p>
                 </Link>
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
                   <p>Labs</p>
                 </Link>
                 <Link href="/boards">
-                  <p>Boards</p>
+                  <p>Panel</p>
                 </Link>
               </div>
               <div className={styles.followUsMedia}>

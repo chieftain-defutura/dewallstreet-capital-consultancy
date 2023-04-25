@@ -34,23 +34,30 @@ const PortFolio: React.FC = () => {
               loop
               playsInline
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              className={styles.video}
             >
               <source
                 src="https://ik.imagekit.io/d4cf2o3ja/web-development.mp4?updatedAt=1680263299603"
                 type="video/mp4"
               />
             </video>
+            {/* <div className={styles.view}>
+              <h6>view</h6>
+            </div> */}
           </div>
           <div className={styles.overflow}>
             <div className={styles.webDevelopmentImages}>
               <div className={styles.webDevelopmentImgFlex}>
-                <div>
+                <div className={styles.web}>
                   <Image
                     src={WebDevelopmentOne}
                     alt=""
                     width={259}
                     height={178}
                   />
+                  {/* <div className={styles.view}>
+                    <h6>view</h6>
+                  </div> */}
                 </div>
                 <div>
                   <Image

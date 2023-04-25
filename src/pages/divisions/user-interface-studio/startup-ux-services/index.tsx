@@ -21,24 +21,46 @@ export default function StartupUxServices() {
       <main>
         <div>
           <div className={styles.startUp_ux_wrapper}>
+            <div className={styles.ux}>
+              <h1>UX</h1>
+            </div>
+            <div className={styles.first_content}>
+              <div className={styles.ux_box}>
+                <h1>UX</h1>
+              </div>
+              <div>
+                <h3>User Experience Studio </h3>
+              </div>
+            </div>
             <div className={styles.startUp_ux_container}>
-              <div className={styles.first_content}>
-                <div className={styles.ux_box}>
-                  <h1>UX</h1>
+              <div className={styles.startUp}>
+                <div className={styles.startup_content}>
+                  <h2>STARTUP</h2>
+                  <h2>UX SERVICES</h2>
                 </div>
-                <div>
-                  <h3>User Experience Studio </h3>
+                <div className={styles.startup_para}>
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.quis
+                    nostrud exercitation ullamco.magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamcoUt enim ad minim
+                    veniam, quis nostrud exercitation ullamco.
+                  </p>
+                </div>
+                <div className={styles.startup_para_responsive}>
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis.
+                  </p>
                 </div>
               </div>
 
-              <div className={styles.startup_content}>
-                <h2>STARTUP</h2>
-                <h2>UX SERVICES</h2>
-              </div>
-
-              <div className={styles.startup_content_media}>
+              {/* <div className={styles.startup_content_media}>
                 <h2>STARTUP UX SERVICES</h2>
-              </div>
+              </div> */}
             </div>
 
             <div className={styles.second_content}>

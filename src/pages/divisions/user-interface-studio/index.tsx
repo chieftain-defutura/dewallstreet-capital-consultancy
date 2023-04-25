@@ -18,82 +18,117 @@ export default function UserExperienceStudio() {
       </Head>
       <main>
         <div className={styles.mx}>
-          <div className={styles.user_experience_wrapper}>
-            <div className={styles.ux_box}>
-              <h1>UX</h1>
-            </div>
-            <div className={styles.user_experience_content}>
-              <h2>User Experience Studio </h2>
-              <h3>We build outcome focused designs, that drives businesses.</h3>
-            </div>
-            <div className={styles.user_experience_flexContent}>
-              <Link
-                href={"/divisions/user-interface-studio/startup-ux-services"}
-              >
-                <div className={styles.services_icons}>
-                  <div>
-                    <div className={styles.imageContent}>
-                      <Image
-                        src={"/assets/icons/uxService.svg"}
-                        alt="icon"
-                        width={36}
-                        height={36}
-                        priority
-                        quality={75}
-                      />
-                    </div>
-                    <h3>STARTUP</h3>
-                    <h3>UX SERVICES</h3>
-                  </div>
-                </div>
-              </Link>
-              <div className={styles.UserExperienceStudioImg}>
-                <Image
-                  src={"/assets/images/userExperienceStudioImg.png"}
-                  alt="UserExperienceStudioImg"
-                  layout="fill"
-                  className={styles.image}
-                  quality={75}
-                  priority
-                />
+          <div className={styles.user_experience}>
+            <div className={styles.user_experience_wrapper}>
+              <div className={styles.ux_box}>
+                <h1>UX</h1>
               </div>
-              <Link href={"/insights"}>
-                <div className={styles.services_icons}>
-                  <div>
-                    <Image
-                      src={"/assets/icons/enterprise.svg"}
-                      alt="enterprise"
-                      width={36}
-                      height={36}
-                    />
-                    <h3>ENTERPRISE</h3>
-                    <h3>UX SERVICES</h3>
+              <div className={styles.user_experience_content}>
+                <h2>User Experience Studio </h2>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.quis nostrud
+                  exercitation ullamco.
+                </p>
+                <h3>
+                  We build outcome focused designs, that drives businesses.
+                </h3>
+              </div>
+              <div className={styles.user_experience_flexContent}>
+                <div>
+                  <Link
+                    href={
+                      "/divisions/user-interface-studio/startup-ux-services"
+                    }
+                  >
+                    <div className={styles.services_icons}>
+                      <div>
+                        <div className={styles.imageContent}>
+                          <Image
+                            src={"/assets/icons/uxService.svg"}
+                            alt="icon"
+                            width={36}
+                            height={36}
+                            priority
+                            quality={75}
+                          />
+                        </div>
+                        <h3>STARTUP</h3>
+                        <h3>UX SERVICES</h3>
+                      </div>
+                    </div>
+                  </Link>
+                  <div className={styles.prototype}>
+                    <ul>
+                      <li>Idea to Prototype</li>
+                      <li>Minimum Viable Product</li>
+                      <li>Landing Funnel</li>
+                    </ul>
                   </div>
                 </div>
-              </Link>
+                <div className={styles.UserExperienceStudioImg}>
+                  <Image
+                    src={"/assets/images/userExperienceStudioImg.png"}
+                    alt="UserExperienceStudioImg"
+                    // layout="fill"
+                    width={500}
+                    height={330}
+                    className={styles.image}
+                    quality={75}
+                    priority
+                  />
+                </div>
+                <div>
+                  <Link href={"/insights"}>
+                    <div className={styles.services_icons}>
+                      <div>
+                        <Image
+                          src={"/assets/icons/enterprise.svg"}
+                          alt="enterprise"
+                          width={36}
+                          height={36}
+                        />
+                        <h3>ENTERPRISE</h3>
+                        <h3>UX SERVICES</h3>
+                      </div>
+                    </div>
+                  </Link>
+                  <div className={styles.prototype}>
+                    <ul>
+                      <li>Experience Audits</li>
+                      <li>Improved Aesthetics</li>
+                      <li>Design System</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className={styles.UserExperience_content_One}>
             <div className={styles.content_one}>
-              <Link
-                href={"/divisions/user-interface-studio/startup-ux-services"}
-              >
-                <div>
-                  <Image
-                    src={"/assets/icons/uxService.svg"}
-                    alt="service"
-                    width={20}
-                    height={20}
-                    quality={75}
-                    priority
-                  />
-                  <h3>STARTUP</h3>
-                  <h3>UX SERVICES</h3>
-                </div>
-              </Link>
+              <div>
+                <Link
+                  href={"/divisions/user-interface-studio/startup-ux-services"}
+                >
+                  <div>
+                    <Image
+                      src={"/assets/icons/uxService.svg"}
+                      alt="service"
+                      width={20}
+                      height={20}
+                      quality={75}
+                      priority
+                    />
+                    <h3>STARTUP</h3>
+                    <h3>UX SERVICES</h3>
+                  </div>
+                </Link>
+              </div>
             </div>
-            <div>
+            <div className={styles.UserExperienceImgOne}>
               <Image
                 src={"/assets/images/userExperience-img-1.png"}
                 alt="UserExperienceImgOne"
@@ -111,7 +146,7 @@ export default function UserExperienceStudio() {
               styles.userExperience_two
             )}
           >
-            <div>
+            <div className={styles.UserExperienceImgOne}>
               <Image
                 src={"/assets/images/userExperience-img-2.png"}
                 alt="UserExperienceImgTwo"

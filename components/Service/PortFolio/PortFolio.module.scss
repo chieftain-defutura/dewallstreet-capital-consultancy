@@ -68,6 +68,12 @@
       max-height: 374px;
       height: 100%;
       border-radius: 10px;
+      cursor: pointer;
+      // &:hover {
+      //   position: absolute;
+      //   z-index: -1;
+      //   transition: 0.5s;
+      // }
     }
     .overflow {
       display: flex;

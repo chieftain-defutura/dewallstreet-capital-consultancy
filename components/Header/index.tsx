@@ -7,9 +7,12 @@ import Access from "../../public/assets/icons/fingerprint.svg";
 import Logo from "../../public/assets/icons/conseltancy-logo.svg";
 import Menu from "../../public/assets/icons/menu.svg";
 import { AnimatePresence, motion } from "framer-motion";
+import { headerStore } from "@/store/headerStore";
 
 const Header: React.FC = () => {
   const [openClose, setOpenClose] = useState(false);
+  const isScrolled = headerStore((store) => store.isScrolled);
+  console.log(isScrolled);
 
   useEffect(() => {
     if (openClose) {
