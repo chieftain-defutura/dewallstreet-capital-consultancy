@@ -47,47 +47,49 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.content}>
-          <div className={styles.logo}>
-            <Link href="/">
+      {!isScrolled ? (
+        <header className={styles.header}>
+          <div className={styles.content}>
+            <div className={styles.logo}>
+              <Link href="/">
+                <Image
+                  src={Logo}
+                  alt=""
+                  width={300}
+                  height={42}
+                  quality={75}
+                  priority
+                />
+              </Link>
+            </div>
+            {renderLinks}
+          </div>
+          {renderAccess}
+          <div className={styles.menu} style={{ cursor: "pointer" }}>
+            {!openClose ? (
               <Image
-                src={Logo}
+                onClick={() => setOpenClose((m) => !m)}
+                src={Menu}
                 alt=""
-                width={300}
-                height={42}
+                width={28}
+                height={28}
                 quality={75}
                 priority
               />
-            </Link>
+            ) : (
+              <Image
+                onClick={() => setOpenClose((m) => !m)}
+                src={Close}
+                alt=""
+                width={28}
+                height={28}
+                quality={75}
+                priority
+              />
+            )}
           </div>
-          {renderLinks}
-        </div>
-        {renderAccess}
-        <div className={styles.menu} style={{ cursor: "pointer" }}>
-          {!openClose ? (
-            <Image
-              onClick={() => setOpenClose((m) => !m)}
-              src={Menu}
-              alt=""
-              width={28}
-              height={28}
-              quality={75}
-              priority
-            />
-          ) : (
-            <Image
-              onClick={() => setOpenClose((m) => !m)}
-              src={Close}
-              alt=""
-              width={28}
-              height={28}
-              quality={75}
-              priority
-            />
-          )}
-        </div>
-      </header>
+        </header>
+      ) : null}
       <AnimatePresence>
         {openClose && (
           <motion.div

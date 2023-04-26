@@ -1,10 +1,13 @@
-import React, { HtmlHTMLAttributes } from "react";
+import React, { HtmlHTMLAttributes, useState } from "react";
 import Image from "next/image";
 import ChevronRight from "../../../public/assets/icons/chevron-right.png";
 import styles from "./IdeaToProtoTypeHeader.module.scss";
 import Button from "../../Button";
 import Link from "next/link";
 const IdeaToProtoTypeHeader: React.FC = () => {
+  const [isActive, setisActive] = useState("overview");
+  const [activeColor, setActiveColor] = useState(false);
+  const [active, setActive] = useState(0);
   return (
     <div className={styles.ideaToProtoTypeWrapper}>
       <div className={styles.ideaToProtoTypeContainer}>
@@ -42,19 +45,68 @@ const IdeaToProtoTypeHeader: React.FC = () => {
 
         <div className={styles.navigation}>
           <li>
-            <a href="#over-view">OVERVIEW</a>
+            <div onClick={() => setisActive("overview")}>
+              <div onClick={() => setActive(0)}>
+                <a
+                  href="#over-view"
+                  style={{ color: active === 0 ? "#02D4F8" : "#777777" }}
+                >
+                  OVERVIEW
+                </a>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="#approach">APPROACH</a>
+            <div onClick={() => setisActive("approach")}>
+              <div onClick={() => setActive(1)}>
+                <a
+                  href="#approach"
+                  onClick={() => setActiveColor(!activeColor)}
+                  style={{ color: active === 1 ? "#02D4F8" : "#777777" }}
+                >
+                  APPROACH
+                </a>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="#portfolio">PORTFOLIO</a>
+            <div onClick={() => setisActive("portfolio")}>
+              <div onClick={() => setActive(2)}>
+                <a
+                  href="#portfolio"
+                  onClick={() => setActiveColor(!activeColor)}
+                  style={{ color: active === 2 ? "#02D4F8" : "#777777" }}
+                >
+                  APPROACH
+                </a>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="#benifits">BENEFITS</a>
+            <div onClick={() => setisActive("benifits")}>
+              <div onClick={() => setActive(3)}>
+                <a
+                  href="#benifits"
+                  onClick={() => setActiveColor(!activeColor)}
+                  style={{ color: active === 3 ? "#02D4F8" : "#777777" }}
+                >
+                  BENIFITS
+                </a>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="#testimonials">TESTIMONIALS</a>
+            <div onClick={() => setisActive("testimonials")}>
+              <div onClick={() => setActive(4)}>
+                <a
+                  href="#testimonials"
+                  // onClick={() => setActiveColor(!activeColor)}
+                  style={{ color: active === 4 ? "#02D4F8" : "#777777" }}
+                >
+                  TESTIMONIALS
+                </a>
+              </div>
+            </div>
           </li>
         </div>
 

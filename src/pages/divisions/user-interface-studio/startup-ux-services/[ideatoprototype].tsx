@@ -8,21 +8,27 @@ import Collaborate from "../../../../../components/Collabrate";
 import PortFolio from "../../../../../components/Service/PortFolio";
 import { useEffect, useState } from "react";
 import { headerStore } from "@/store/headerStore";
+import Header from "components/Header";
 
 export default function IdeaToProtoType() {
-  const isScrolled = headerStore((store) => store.isScrolled);
+  let isScrolled = headerStore((store) => store.isScrolled);
   const update = headerStore((store) => store.update);
   console.log(isScrolled);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY >= 100) {
+    const handleScrollView = () => {
+      if (window.scrollY >= 50) {
         update(true);
       } else {
         update(false);
       }
-    });
-  });
+    };
+
+    window.addEventListener("scroll", handleScrollView);
+    return () => {
+      window.removeEventListener("scroll", handleScrollView);
+    };
+  }, []);
 
   return (
     <>

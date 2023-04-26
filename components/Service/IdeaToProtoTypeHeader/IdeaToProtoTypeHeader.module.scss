@@ -1,10 +1,24 @@
 .ideaToProtoTypeWrapper {
-  background: rgba(255, 255, 255, 0.05);
+  // background-color: rgba(255, 255, 255, 0.05);
   margin-top: 65px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(30, 30, 30, 0.1);
+  border: 1px solid rgba(30, 30, 30, 0.1);
+  overflow: hidden;
+  z-index: 100;
+  // border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+  backdrop-filter: blur(22px);
+
   .ideaToProtoTypeContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
     @media (max-width: 1024px) {
       display: block;
     }
@@ -84,13 +98,28 @@
         justify-content: space-around;
         gap: 0;
       }
+      @media (max-width: 480px) {
+        padding-bottom: 24px;
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        margin: 0 auto;
+        padding: 5px;
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+      }
       a {
         &:hover {
           color: #02d4f8;
         }
+
         @media (max-width: 425px) {
           font-size: 12px;
         }
+      }
+      &:active {
+        color: #02d4f8;
       }
     }
     .scheduleBtn {
@@ -103,6 +132,9 @@
         display: flex;
         justify-content: center;
         padding: 32px;
+      }
+      @media (max-width: 480px) {
+        display: none;
       }
     }
   }

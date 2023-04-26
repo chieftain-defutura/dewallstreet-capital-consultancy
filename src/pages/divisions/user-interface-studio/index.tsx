@@ -108,24 +108,35 @@ export default function UserExperienceStudio() {
           </div>
 
           <div className={styles.UserExperience_content_One}>
-            <div className={styles.content_one}>
-              <div>
-                <Link
-                  href={"/divisions/user-interface-studio/startup-ux-services"}
-                >
-                  <div>
-                    <Image
-                      src={"/assets/icons/uxService.svg"}
-                      alt="service"
-                      width={20}
-                      height={20}
-                      quality={75}
-                      priority
-                    />
-                    <h3>STARTUP</h3>
-                    <h3>UX SERVICES</h3>
-                  </div>
-                </Link>
+            <div>
+              <div className={styles.content_one}>
+                <div>
+                  <Link
+                    href={
+                      "/divisions/user-interface-studio/startup-ux-services"
+                    }
+                  >
+                    <div>
+                      <Image
+                        src={"/assets/icons/uxService.svg"}
+                        alt="service"
+                        width={20}
+                        height={20}
+                        quality={75}
+                        priority
+                      />
+                      <h3>STARTUP</h3>
+                      <h3>UX SERVICES</h3>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className={styles.prototype}>
+                <ul>
+                  <li>Idea to Prototype</li>
+                  <li>Minimum Viable Product</li>
+                  <li>Landing Funnel</li>
+                </ul>
               </div>
             </div>
             <div className={styles.UserExperienceImgOne}>
@@ -139,7 +150,6 @@ export default function UserExperienceStudio() {
               />
             </div>
           </div>
-
           <div
             className={classNames(
               styles.UserExperience_content_One,
@@ -156,21 +166,30 @@ export default function UserExperienceStudio() {
                 priority
               />
             </div>
-            <div className={styles.content_one}>
-              <Link href={"/insights"}>
-                <div>
-                  <Image
-                    src={"/assets/icons/enterprise.svg"}
-                    alt="enterprise"
-                    width={20}
-                    height={20}
-                    quality={75}
-                    priority
-                  />
-                  <h3>ENTERPRISE</h3>
-                  <h3>UX SERVICES</h3>
-                </div>
-              </Link>
+            <div>
+              <div className={styles.content_one}>
+                <Link href={"/insights"}>
+                  <div>
+                    <Image
+                      src={"/assets/icons/enterprise.svg"}
+                      alt="enterprise"
+                      width={20}
+                      height={20}
+                      quality={75}
+                      priority
+                    />
+                    <h3>ENTERPRISE</h3>
+                    <h3>UX SERVICES</h3>
+                  </div>
+                </Link>
+              </div>
+              <div className={styles.prototype}>
+                <ul>
+                  <li>Experience Audits</li>
+                  <li>Improved Aesthetics</li>
+                  <li>Design System</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

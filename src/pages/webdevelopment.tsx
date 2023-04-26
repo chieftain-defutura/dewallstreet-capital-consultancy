@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.scss";
 import ChallengesAndSolutions from "../../components/Challenges&Solutions";
 import ImproveBuisness from "../../components/ImproveBuisness";
 import Collaborate from "../../components/Collabrate";
+// import PreetInteriorDesigns from "../../components/PreetInteriorDesigns";
 // import LatestNews from "../../components/LatestNews";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +53,7 @@ export default function WebDevelopment() {
           <ImproveBuisness />
           <Collaborate title="How we collaborate  with you." textAlign="left" />
           {/* <LatestNews /> */}
+          {/* <PreetInteriorDesigns /> */}
         </div>
       </main>
     </>

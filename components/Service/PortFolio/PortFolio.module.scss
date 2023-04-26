@@ -62,18 +62,14 @@
       grid-template-columns: 1fr;
     }
 
-    .webDevelopmentVideo video {
-      max-width: 665px;
-      width: 100%;
-      max-height: 374px;
-      height: 100%;
-      border-radius: 10px;
-      cursor: pointer;
-      // &:hover {
-      //   position: absolute;
-      //   z-index: -1;
-      //   transition: 0.5s;
-      // }
+    .webDevelopmentVideo {
+      video {
+        max-width: 665px;
+        width: 100%;
+        max-height: 374px;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
     .overflow {
       display: flex;

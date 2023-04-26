@@ -27,38 +27,42 @@ const PortFolio: React.FC = () => {
         </div>
 
         <div className={styles.webDevelopmentContainer}>
-          <div className={styles.webDevelopmentVideo}>
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              className={styles.video}
-            >
-              <source
-                src="https://ik.imagekit.io/d4cf2o3ja/web-development.mp4?updatedAt=1680263299603"
-                type="video/mp4"
-              />
-            </video>
-            {/* <div className={styles.view}>
+          <Link href={"/webdevelopment"}>
+            <div className={styles.webDevelopmentVideo}>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                className={styles.video}
+              >
+                <source
+                  src="https://ik.imagekit.io/d4cf2o3ja/web-development.mp4?updatedAt=1680263299603"
+                  type="video/mp4"
+                />
+              </video>
+              {/* <div className={styles.view}>
               <h6>view</h6>
             </div> */}
-          </div>
+            </div>
+          </Link>
           <div className={styles.overflow}>
             <div className={styles.webDevelopmentImages}>
               <div className={styles.webDevelopmentImgFlex}>
-                <div className={styles.web}>
-                  <Image
-                    src={WebDevelopmentOne}
-                    alt=""
-                    width={259}
-                    height={178}
-                  />
-                  {/* <div className={styles.view}>
+                <Link href={"/preetinteriordesign"}>
+                  <div className={styles.web}>
+                    <Image
+                      src={WebDevelopmentOne}
+                      alt=""
+                      width={259}
+                      height={178}
+                    />
+                    {/* <div className={styles.view}>
                     <h6>view</h6>
                   </div> */}
-                </div>
+                  </div>
+                </Link>
                 <div>
                   <Image
                     src={WebDevelopmentTwo}
