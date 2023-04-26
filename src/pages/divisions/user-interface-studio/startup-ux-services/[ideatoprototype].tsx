@@ -28,7 +28,7 @@ export default function IdeaToProtoType() {
     return () => {
       window.removeEventListener("scroll", handleScrollView);
     };
-  }, []);
+  }, [update]);
 
   return (
     <>

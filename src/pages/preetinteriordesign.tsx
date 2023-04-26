@@ -1,11 +1,10 @@
 import React from "react";
 import PreetInteriorDesigns from "../../components/PreetInteriorDesigns";
-import { Head } from "next/document";
 import ChallengesAndSolutions from "../../components/Challenges&Solutions";
 import Collaborate from "../../components/Collabrate";
 import ImproveBuisness from "../../components/ImproveBuisness";
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+// import { Inter } from "next/font/google";
+// const inter = Inter({ subsets: ["latin"] });
 
 const PreetInteriorDesign: React.FC = () => {
   return (

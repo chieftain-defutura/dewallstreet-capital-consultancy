@@ -40,8 +40,8 @@ export default function StartupUxServices() {
                 </div>
                 <div className={styles.startup_para}>
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.quis
                     nostrud exercitation ullamco.magna aliqua. Ut enim ad minim
@@ -51,8 +51,8 @@ export default function StartupUxServices() {
                 </div>
                 <div className={styles.startup_para_responsive}>
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis.
                   </p>
                 </div>
