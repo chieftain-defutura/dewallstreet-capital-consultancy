@@ -17,32 +17,36 @@ export const IPreetInterior: IData["data"][] = [
       },
     },
   },
-  // {
-  //   title: "Fortunetta",
-  //   path: "fortunetta",
-  //   hero: {
-  //     image: {
-  //       src: "/images/preetInteriorDesigns-img.png",
-  //       alt: "preetInteriorDesigns",
-  //     },
-  //     logo: {
-  //       src: "/icons/preetInteriorDesigns-logo.png",
-  //       alt: "preetInteriorDesigns",
-  //     },
-  //   },
-  // },
-  // {
-  //   title: "Zevo Corporation",
-  //   path: "zero-corporation",
-  //   hero: {
-  //     image: {
-  //       src: "/images/preetInteriorDesigns-img.png",
-  //       alt: "preetInteriorDesigns",
-  //     },
-  //     logo: {
-  //       src: "/icons/preetInteriorDesigns-logo.png",
-  //       alt: "preetInteriorDesigns",
-  //     },
-  //   },
-  // },
+];
+export const IFORTUNETTA: IData["data"][] = [
+  {
+    title: "Fortunetta",
+    path: "/fortunetta",
+    hero: {
+      image: {
+        src: "assets/icons/fortunetta-bg.svg",
+        alt: "Fortunetta",
+      },
+      logo: {
+        src: "assets/icons/fortunetta-logo.svg",
+        alt: "Fortunetta",
+      },
+    },
+  },
+];
+export const IZEVO: IData["data"][] = [
+  {
+    title: "Zevo Corporation",
+    path: "/zero-corporation",
+    hero: {
+      image: {
+        src: "assets/icons/zevo-bg.svg",
+        alt: "zevo-bg",
+      },
+      logo: {
+        src: "assets/icons/zevo-logo.svg",
+        alt: "zevo-bg",
+      },
+    },
+  },
 ];

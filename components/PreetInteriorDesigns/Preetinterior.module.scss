@@ -8,11 +8,37 @@
     left: 0;
     padding: 32px;
     z-index: 1;
+
     @media (max-width: 780px) {
       padding: 24px;
       img {
         width: 70px;
         height: 40px;
+      }
+    }
+  }
+  .logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 32px;
+    z-index: 1;
+    img {
+      width: 270px;
+      height: auto;
+    }
+    @media (max-width: 780px) {
+      padding: 24px;
+      img {
+        width: 140px;
+        height: auto;
+      }
+    }
+    @media (max-width: 480px) {
+      padding: 24px;
+      img {
+        width: 140px;
+        height: auto;
       }
     }
   }

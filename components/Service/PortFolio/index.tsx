@@ -6,6 +6,7 @@ import Link from "next/link";
 import Button from "../../Button";
 import Image from "next/image";
 import styles from "./PortFolio.module.scss";
+import eye from "../../../public/assets/icons/eye.svg";
 
 const PortFolio: React.FC = () => {
   return (
@@ -42,9 +43,9 @@ const PortFolio: React.FC = () => {
                   type="video/mp4"
                 />
               </video>
-              {/* <div className={styles.view}>
-              <h6>view</h6>
-            </div> */}
+              <div className={styles.view}>
+                <Image src={eye} alt="eye" width={24} height={24} />
+              </div>
             </div>
           </Link>
           <div className={styles.overflow}>
@@ -57,30 +58,51 @@ const PortFolio: React.FC = () => {
                       alt=""
                       width={259}
                       height={178}
+                      className={styles.image}
                     />
-                    {/* <div className={styles.view}>
-                    <h6>view</h6>
-                  </div> */}
+                    <div className={styles.view}>
+                      <div>
+                        <Image src={eye} alt="eye" width={24} height={24} />
+                      </div>
+                    </div>
                   </div>
                 </Link>
-                <div>
-                  <Image
-                    src={WebDevelopmentTwo}
-                    alt=""
-                    width={259}
-                    height={178}
-                  />
-                </div>
+                <Link href={"/fortunetta"}>
+                  <div className={styles.web}>
+                    <Image
+                      src={WebDevelopmentTwo}
+                      alt=""
+                      width={259}
+                      height={178}
+                      className={styles.image}
+                    />
+                    <div className={styles.view}>
+                      <div>
+                        <Image src={eye} alt="eye" width={24} height={24} />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
               </div>
               <div>
-                <Image
-                  src={WebDevelopmentThree}
-                  alt=""
-                  width={295}
-                  height={374}
-                  quality={75}
-                  priority
-                />
+                <Link href={"/zevo-corporation"}>
+                  <div className={styles.web}>
+                    <Image
+                      src={WebDevelopmentThree}
+                      alt=""
+                      width={295}
+                      height={374}
+                      quality={75}
+                      priority
+                      className={styles.image}
+                    />
+                    <div className={styles.view}>
+                      <div>
+                        <Image src={eye} alt="eye" width={24} height={24} />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
             <div className={styles.webDevelopmentImages}>

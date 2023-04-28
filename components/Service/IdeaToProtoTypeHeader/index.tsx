@@ -1,13 +1,47 @@
-import React, { HtmlHTMLAttributes, useState } from "react";
+import React, {
+  HtmlHTMLAttributes,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import Image from "next/image";
 import ChevronRight from "../../../public/assets/icons/chevron-right.png";
 import styles from "./IdeaToProtoTypeHeader.module.scss";
 import Button from "../../Button";
 import Link from "next/link";
+
 const IdeaToProtoTypeHeader: React.FC = () => {
   const [isActive, setisActive] = useState("overview");
   const [activeColor, setActiveColor] = useState(false);
   const [active, setActive] = useState(0);
+  const [color, setColor] = useState(false);
+
+  const targetref = useRef(null);
+
+  const callbackFunction = (entries) => {
+    const [entry] = entries;
+    setisActive(entry.isIntersecting);
+    console.log(entry);
+  };
+  const options = useMemo(() => {
+    return {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+  }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(callbackFunction, options);
+    const currentTarget = targetref.current;
+    if (currentTarget) observer.observe(currentTarget);
+    console.log(currentTarget);
+
+    return () => {
+      if (currentTarget) observer.unobserve(currentTarget);
+    };
+  }, [targetref, options]);
+
   return (
     <div className={styles.ideaToProtoTypeWrapper}>
       <div className={styles.ideaToProtoTypeContainer}>
@@ -46,7 +80,7 @@ const IdeaToProtoTypeHeader: React.FC = () => {
         <div className={styles.navigation}>
           <li>
             <div onClick={() => setisActive("overview")}>
-              <div onClick={() => setActive(0)}>
+              <div ref={targetref} onClick={() => setActive(0)}>
                 <a
                   href="#over-view"
                   style={{ color: active === 0 ? "#02D4F8" : "#777777" }}
@@ -58,7 +92,7 @@ const IdeaToProtoTypeHeader: React.FC = () => {
           </li>
           <li>
             <div onClick={() => setisActive("approach")}>
-              <div onClick={() => setActive(1)}>
+              <div ref={targetref} onClick={() => setActive(1)}>
                 <a
                   href="#approach"
                   onClick={() => setActiveColor(!activeColor)}
@@ -71,20 +105,20 @@ const IdeaToProtoTypeHeader: React.FC = () => {
           </li>
           <li>
             <div onClick={() => setisActive("portfolio")}>
-              <div onClick={() => setActive(2)}>
+              <div ref={targetref} onClick={() => setActive(2)}>
                 <a
                   href="#portfolio"
                   onClick={() => setActiveColor(!activeColor)}
                   style={{ color: active === 2 ? "#02D4F8" : "#777777" }}
                 >
-                  APPROACH
+                  PORTFOLIO
                 </a>
               </div>
             </div>
           </li>
           <li>
             <div onClick={() => setisActive("benifits")}>
-              <div onClick={() => setActive(3)}>
+              <div ref={targetref} onClick={() => setActive(3)}>
                 <a
                   href="#benifits"
                   onClick={() => setActiveColor(!activeColor)}
@@ -97,7 +131,7 @@ const IdeaToProtoTypeHeader: React.FC = () => {
           </li>
           <li>
             <div onClick={() => setisActive("testimonials")}>
-              <div onClick={() => setActive(4)}>
+              <div ref={targetref} onClick={() => setActive(4)}>
                 <a
                   href="#testimonials"
                   // onClick={() => setActiveColor(!activeColor)}
@@ -109,7 +143,6 @@ const IdeaToProtoTypeHeader: React.FC = () => {
             </div>
           </li>
         </div>
-
         <div className={styles.scheduleBtn}>
           <a
             href="https://calendly.com/defutura/30min"
