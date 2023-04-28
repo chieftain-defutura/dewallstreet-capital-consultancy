@@ -15,32 +15,31 @@ const IdeaToProtoTypeHeader: React.FC = () => {
   const [isActive, setisActive] = useState("overview");
   const [activeColor, setActiveColor] = useState(false);
   const [active, setActive] = useState(0);
-  const [color, setColor] = useState(false);
 
   const targetref = useRef(null);
 
-  const callbackFunction = (entries) => {
-    const [entry] = entries;
-    setisActive(entry.isIntersecting);
-    console.log(entry);
-  };
-  const options = useMemo(() => {
-    return {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
-  }, []);
-  useEffect(() => {
-    const observer = new IntersectionObserver(callbackFunction, options);
-    const currentTarget = targetref.current;
-    if (currentTarget) observer.observe(currentTarget);
-    console.log(currentTarget);
+  // const callbackFunction = (entries) => {
+  //   const [entry] = entries;
+  //   setisActive(entry.isIntersecting);
+  //   console.log(entry);
+  // };
+  // const options = useMemo(() => {
+  //   return {
+  //     root: null,
+  //     rootMargin: "0px",
+  //     threshold: 0.5,
+  //   };
+  // }, []);
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(callbackFunction, options);
+  //   const currentTarget = targetref.current;
+  //   if (currentTarget) observer.observe(currentTarget);
+  //   console.log(currentTarget);
 
-    return () => {
-      if (currentTarget) observer.unobserve(currentTarget);
-    };
-  }, [targetref, options]);
+  //   return () => {
+  //     if (currentTarget) observer.unobserve(currentTarget);
+  //   };
+  // }, [targetref, options]);
 
   return (
     <div className={styles.ideaToProtoTypeWrapper}>
