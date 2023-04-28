@@ -10,7 +10,7 @@ import eye from "../../../public/assets/icons/eye.svg";
 
 const PortFolio: React.FC = () => {
   return (
-    <div className={styles.portFolioWrapper} id="portfolio">
+    <aside className={styles.service_section} id="portfolio">
       <div>
         <div className={styles.portFolioHead}>
           <p>PORTFOLIO</p>
@@ -44,7 +44,12 @@ const PortFolio: React.FC = () => {
                 />
               </video>
               <div className={styles.view}>
-                <Image src={eye} alt="eye" width={24} height={24} />
+                <div className={styles.overlay}>
+                  <div>
+                    <Image src={eye} alt="eye" width={24} height={24} />
+                  </div>
+                  <h6>View</h6>
+                </div>
               </div>
             </div>
           </Link>
@@ -61,8 +66,11 @@ const PortFolio: React.FC = () => {
                       className={styles.image}
                     />
                     <div className={styles.view}>
-                      <div>
-                        <Image src={eye} alt="eye" width={24} height={24} />
+                      <div className={styles.overlay}>
+                        <div>
+                          <Image src={eye} alt="eye" width={24} height={24} />
+                        </div>
+                        <h6>View</h6>
                       </div>
                     </div>
                   </div>
@@ -77,8 +85,11 @@ const PortFolio: React.FC = () => {
                       className={styles.image}
                     />
                     <div className={styles.view}>
-                      <div>
-                        <Image src={eye} alt="eye" width={24} height={24} />
+                      <div className={styles.overlay}>
+                        <div>
+                          <Image src={eye} alt="eye" width={24} height={24} />
+                        </div>
+                        <h6>View</h6>
                       </div>
                     </div>
                   </div>
@@ -97,8 +108,11 @@ const PortFolio: React.FC = () => {
                       className={styles.image}
                     />
                     <div className={styles.view}>
-                      <div>
-                        <Image src={eye} alt="eye" width={24} height={24} />
+                      <div className={styles.overlay}>
+                        <div>
+                          <Image src={eye} alt="eye" width={24} height={24} />
+                        </div>
+                        <h6>View</h6>
                       </div>
                     </div>
                   </div>
@@ -107,42 +121,71 @@ const PortFolio: React.FC = () => {
             </div>
             <div className={styles.webDevelopmentImages}>
               <div className={styles.webDevelopmentImgFlex}>
-                <div>
+                <Link href={"/preetinteriordesign"}>
+                  <div className={styles.web}>
+                    <Image
+                      src={WebDevelopmentOne}
+                      alt=""
+                      width={259}
+                      height={178}
+                      className={styles.image}
+                    />
+                    <div className={styles.view}>
+                      <div className={styles.overlay}>
+                        <div>
+                          <Image src={eye} alt="eye" width={24} height={24} />
+                        </div>
+                        <h6>View</h6>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href={"/fortunetta"}>
+                  <div className={styles.web}>
+                    <Image
+                      src={WebDevelopmentTwo}
+                      alt=""
+                      width={259}
+                      height={178}
+                      className={styles.image}
+                    />
+                    <div className={styles.view}>
+                      <div className={styles.overlay}>
+                        <div>
+                          <Image src={eye} alt="eye" width={24} height={24} />
+                        </div>
+                        <h6>View</h6>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <Link href={"/zevo-corporation"}>
+                <div className={styles.web}>
                   <Image
-                    src={WebDevelopmentOne}
+                    src={WebDevelopmentThree}
                     alt=""
-                    width={259}
-                    height={178}
+                    width={295}
+                    height={374}
                     quality={75}
                     priority
+                    className={styles.image}
                   />
+                  <div className={styles.view}>
+                    <div className={styles.overlay}>
+                      <div>
+                        <Image src={eye} alt="eye" width={24} height={24} />
+                      </div>
+                      <h6>View</h6>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <Image
-                    src={WebDevelopmentTwo}
-                    alt=""
-                    width={259}
-                    height={178}
-                    quality={75}
-                    priority
-                  />
-                </div>
-              </div>
-              <div>
-                <Image
-                  src={WebDevelopmentThree}
-                  alt=""
-                  width={295}
-                  height={374}
-                  quality={75}
-                  priority
-                />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 

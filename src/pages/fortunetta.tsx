@@ -33,24 +33,20 @@ const Fortunetta = () => {
                       layout={"fill"}
                     />
                   </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "end",
-                      padding: "24px ",
-                    }}
-                  >
-                    <Button varient="primary">
-                      Download case study
-                      <div>
-                        <Image
-                          src={icon}
-                          alt="downdload-icon"
-                          width={24}
-                          height={24}
-                        />
-                      </div>
-                    </Button>
+                  <div className={styles.download_btn}>
+                    <a href={"/assets/pdf/bidify.pdf"} download>
+                      <Button varient="primary">
+                        Download case study
+                        <div>
+                          <Image
+                            src={icon}
+                            alt="downdload-icon"
+                            width={24}
+                            height={24}
+                          />
+                        </div>
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import styles from "./InterActiveProtoType.module.scss";
 
 const InterActiveProtoType: React.FC = () => {
   return (
-    <div className={styles.interActiveProtoType} id="over-view">
+    <aside className={styles.service_section} id="over-view">
       <div className={styles.heading}>
         <h1>
           We bring our client’s ideas to life and create an Interactive
@@ -46,7 +46,7 @@ const InterActiveProtoType: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 

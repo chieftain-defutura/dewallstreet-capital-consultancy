@@ -12,7 +12,7 @@ import Button from "../../Button";
 import Link from "next/link";
 
 const IdeaToProtoTypeHeader: React.FC = () => {
-  const [isActive, setisActive] = useState("overview");
+  const [isActive, setisActive] = useState<string | null>("overview");
   const [activeColor, setActiveColor] = useState(false);
   const [active, setActive] = useState(0);
 
@@ -41,6 +41,22 @@ const IdeaToProtoTypeHeader: React.FC = () => {
   //   };
   // }, [targetref, options]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target && entry.isIntersecting) {
+            setisActive(entry.target.getAttribute("id"));
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const sections = document.querySelectorAll("aside");
+
+    sections.forEach((section) => observer.observe(section));
+  }, []);
   return (
     <div className={styles.ideaToProtoTypeWrapper}>
       <div className={styles.ideaToProtoTypeContainer}>
@@ -78,11 +94,13 @@ const IdeaToProtoTypeHeader: React.FC = () => {
 
         <div className={styles.navigation}>
           <li>
-            <div onClick={() => setisActive("overview")}>
-              <div ref={targetref} onClick={() => setActive(0)}>
+            <div onClick={() => setisActive("over-view")}>
+              <div ref={targetref} onClick={() => setActive(1)}>
                 <a
                   href="#over-view"
-                  style={{ color: active === 0 ? "#02D4F8" : "#777777" }}
+                  style={{
+                    color: isActive === "over-view" ? "#02D4F8" : "#777777",
+                  }}
                 >
                   OVERVIEW
                 </a>
@@ -91,11 +109,13 @@ const IdeaToProtoTypeHeader: React.FC = () => {
           </li>
           <li>
             <div onClick={() => setisActive("approach")}>
-              <div ref={targetref} onClick={() => setActive(1)}>
+              <div ref={targetref} onClick={() => setActive(2)}>
                 <a
                   href="#approach"
                   onClick={() => setActiveColor(!activeColor)}
-                  style={{ color: active === 1 ? "#02D4F8" : "#777777" }}
+                  style={{
+                    color: isActive === "approach" ? "#02D4F8" : "#777777",
+                  }}
                 >
                   APPROACH
                 </a>
@@ -104,11 +124,13 @@ const IdeaToProtoTypeHeader: React.FC = () => {
           </li>
           <li>
             <div onClick={() => setisActive("portfolio")}>
-              <div ref={targetref} onClick={() => setActive(2)}>
+              <div ref={targetref} onClick={() => setActive(3)}>
                 <a
                   href="#portfolio"
                   onClick={() => setActiveColor(!activeColor)}
-                  style={{ color: active === 2 ? "#02D4F8" : "#777777" }}
+                  style={{
+                    color: isActive === "portfolio" ? "#02D4F8" : "#777777",
+                  }}
                 >
                   PORTFOLIO
                 </a>
@@ -117,11 +139,13 @@ const IdeaToProtoTypeHeader: React.FC = () => {
           </li>
           <li>
             <div onClick={() => setisActive("benifits")}>
-              <div ref={targetref} onClick={() => setActive(3)}>
+              <div ref={targetref} onClick={() => setActive(4)}>
                 <a
                   href="#benifits"
                   onClick={() => setActiveColor(!activeColor)}
-                  style={{ color: active === 3 ? "#02D4F8" : "#777777" }}
+                  style={{
+                    color: isActive === "benifits" ? "#02D4F8" : "#777777",
+                  }}
                 >
                   BENIFITS
                 </a>
@@ -130,11 +154,13 @@ const IdeaToProtoTypeHeader: React.FC = () => {
           </li>
           <li>
             <div onClick={() => setisActive("testimonials")}>
-              <div ref={targetref} onClick={() => setActive(4)}>
+              <div ref={targetref} onClick={() => setActive(5)}>
                 <a
                   href="#testimonials"
                   // onClick={() => setActiveColor(!activeColor)}
-                  style={{ color: active === 4 ? "#02D4F8" : "#777777" }}
+                  style={{
+                    color: isActive === "testimonials" ? "#02D4F8" : "#777777",
+                  }}
                 >
                   TESTIMONIALS
                 </a>

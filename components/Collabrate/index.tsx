@@ -18,7 +18,7 @@ interface ICollaborate {
 
 const Collaborate: React.FC<ICollaborate> = ({ title, textAlign, heading }) => {
   return (
-    <div className={styles.mx} id="benifits">
+    <aside className={styles.service_section} id="benifits">
       <div className={styles.heading}>
         <p>{heading}</p>
       </div>
@@ -45,7 +45,7 @@ const Collaborate: React.FC<ICollaborate> = ({ title, textAlign, heading }) => {
           ))}
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 

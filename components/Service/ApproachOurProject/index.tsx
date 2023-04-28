@@ -40,7 +40,7 @@ const ApproachOurProject: React.FC = () => {
     ],
   };
   return (
-    <div className={styles.approachOurProject} id="approach">
+    <aside className={styles.service_section} id="approach">
       <div>
         <div className={styles.approachOurProjectContainer}>
           <h1>How we approach our Projects</h1>
@@ -265,7 +265,7 @@ const ApproachOurProject: React.FC = () => {
           )}
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 
