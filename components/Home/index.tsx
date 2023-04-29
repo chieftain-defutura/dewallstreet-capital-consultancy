@@ -35,6 +35,7 @@ const HomeContent: React.FC = () => {
                   width={100}
                   height={96}
                   quality={75}
+                  loading="eager"
                   priority
                 />
                 <h1>Z</h1>

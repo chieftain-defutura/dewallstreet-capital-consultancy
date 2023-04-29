@@ -105,6 +105,7 @@ const ApproachOurProject: React.FC = () => {
                                 layout="fill"
                                 priority
                                 quality={75}
+                                loading="eager"
                               />
                             </div>
                             <div className={styles.approachourContent}>
@@ -167,6 +168,7 @@ const ApproachOurProject: React.FC = () => {
                                 alt={f.image.alt}
                                 className={styles.image}
                                 layout="fill"
+                                loading="eager"
                                 priority
                                 quality={75}
                               />
@@ -230,6 +232,7 @@ const ApproachOurProject: React.FC = () => {
                                 src={f.image.src}
                                 alt={f.image.alt}
                                 className={styles.image}
+                                loading="eager"
                                 layout="fill"
                                 priority
                                 quality={75}
