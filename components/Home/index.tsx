@@ -637,7 +637,7 @@ const HomeContent: React.FC = () => {
               </div>
             );
           })}
-        </div>
+        </div>*/}
         <div className={styles.visit_btn_media}>
           <a href="https://dewallstreet.capital/">
             <button>
@@ -654,7 +654,7 @@ const HomeContent: React.FC = () => {
               </div>
             </button>
           </a>
-        </div> */}
+        </div>
       </div>
     </>
   );
