@@ -249,14 +249,14 @@ const HomeContent: React.FC = () => {
       </div>
       <div className={styles.second_hexagon_area}>
         <div className={classnames(styles.hexagonArea, styles.first)}>
-          {IHexagon.slice(0, 2).map((f, index) => {
+          {IHexagon.slice(0, 4).map((f, index) => {
             return (
               <div className={styles.background_img} key={index}>
                 <Image
                   src={"/assets/images/hexagon-img-1.png"}
                   alt="HexagonImgOne"
-                  width={101}
-                  height={118}
+                  width={80}
+                  height={98}
                   quality={75}
                   priority
                 />
@@ -274,14 +274,14 @@ const HomeContent: React.FC = () => {
           className={classnames(styles.hexagonArea, styles.second)}
           style={{ transform: "translateY(-26px)" }}
         >
-          {IHexagon.slice(2, 3).map((f, index) => {
+          {IHexagon.slice(4, 7).map((f, index) => {
             return (
               <div key={index} className={styles.background_img}>
                 <Image
                   src={"/assets/images/hexagon-img-1.png"}
                   alt="HexagonImgOne"
-                  width={101}
-                  height={118}
+                  width={80}
+                  height={98}
                   quality={75}
                   priority
                 />
@@ -300,16 +300,16 @@ const HomeContent: React.FC = () => {
           <div>
             <div
               className={classnames(styles.hexagonArea, styles.four)}
-              style={{ transform: "translateY(-55px)" }}
+              style={{ transform: "translateY(-80px)" }}
             >
-              {IHexagon.slice(3, 5).map((f, index) => {
+              {IHexagon.slice(7, 11).map((f, index) => {
                 return (
                   <div key={index} className={styles.background_img}>
                     <Image
                       src={"/assets/images/hexagon-img-1.png"}
                       alt="HexagonImgOne"
-                      width={101}
-                      height={118}
+                      width={80}
+                      height={98}
                       quality={75}
                       priority
                     />
@@ -329,16 +329,16 @@ const HomeContent: React.FC = () => {
 
             <div
               className={classnames(styles.hexagonArea, styles.four)}
-              style={{ transform: "translateY(-80px)" }}
+              style={{ transform: "translateY(-105px)" }}
             >
-              {IHexagon.slice(5, 6).map((f, index) => {
+              {IHexagon.slice(11, 14).map((f, index) => {
                 return (
                   <div key={index} className={styles.background_img}>
                     <Image
                       src={"/assets/images/hexagon-img-1.png"}
                       alt="HexagonImgOne"
-                      width={101}
-                      height={118}
+                      width={80}
+                      height={98}
                       quality={75}
                       priority
                     />
@@ -359,16 +359,16 @@ const HomeContent: React.FC = () => {
           <div>
             <div
               className={classnames(styles.hexagonArea, styles.four)}
-              style={{ transform: "translateY(-55px)" }}
+              style={{ transform: "translateY(-130px)" }}
             >
-              {IHexagon.slice(6, 8).map((f, index) => {
+              {IHexagon.slice(14, 18).map((f, index) => {
                 return (
                   <div key={index} className={styles.background_img}>
                     <Image
                       src={"/assets/images/hexagon-img-1.png"}
                       alt="HexagonImgOne"
-                      width={101}
-                      height={118}
+                      width={80}
+                      height={98}
                       quality={75}
                       priority
                     />
@@ -388,16 +388,16 @@ const HomeContent: React.FC = () => {
 
             <div
               className={classnames(styles.hexagonArea, styles.four)}
-              style={{ transform: "translateY(-80px)" }}
+              style={{ transform: "translateY(-155px)" }}
             >
-              {IHexagon.slice(9, 10).map((f, index) => {
+              {IHexagon.slice(18, 21).map((f, index) => {
                 return (
                   <div key={index} className={styles.background_img}>
                     <Image
                       src={"/assets/images/hexagon-img-1.png"}
                       alt="HexagonImgOne"
-                      width={101}
-                      height={118}
+                      width={80}
+                      height={98}
                       quality={75}
                       priority
                     />
@@ -419,16 +419,16 @@ const HomeContent: React.FC = () => {
 
         <div
           className={classnames(styles.hexagonArea, styles.media_five)}
-          style={{ transform: "translateY(-100px)" }}
+          style={{ transform: "translateY(-210px)" }}
         >
-          {IHexagon.slice(10, 12).map((f, index) => {
+          {IHexagon.slice(21, 25).map((f, index) => {
             return (
               <div key={index} className={styles.background_img}>
                 <Image
                   src={"/assets/images/hexagon-img-1.png"}
                   alt="HexagonImgOne"
-                  width={101}
-                  height={118}
+                  width={80}
+                  height={98}
                   quality={75}
                   priority
                 />
@@ -442,7 +442,7 @@ const HomeContent: React.FC = () => {
             );
           })}
         </div>
-
+        {/* 
         <div
           className={classnames(styles.hexagonArea, styles.five)}
           style={{ transform: "translateY(-125px)" }}
@@ -654,7 +654,7 @@ const HomeContent: React.FC = () => {
               </div>
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );
