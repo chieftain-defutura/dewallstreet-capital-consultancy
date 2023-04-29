@@ -28,6 +28,7 @@ export default function Impact() {
                   width={583}
                   height={496}
                   quality={75}
+                  loading="eager"
                   priority
                 />
 
@@ -38,6 +39,7 @@ export default function Impact() {
                     // width={900}
                     // height={264}
                     layout="fill"
+                    loading="eager"
                     quality={75}
                     priority
                     className={styles.image}

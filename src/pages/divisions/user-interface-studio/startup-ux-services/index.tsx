@@ -71,6 +71,7 @@ export default function StartupUxServices() {
                   width={276}
                   height={500}
                   quality={75}
+                  loading="eager"
                   priority
                 />
               </div>
@@ -82,6 +83,7 @@ export default function StartupUxServices() {
                     width={782}
                     height={50}
                     quality={75}
+                    loading="eager"
                     priority
                   />
                 </div>
@@ -97,6 +99,7 @@ export default function StartupUxServices() {
                               width={32}
                               height={32}
                               quality={75}
+                              loading="eager"
                               priority
                             />
                           </div>
@@ -110,6 +113,7 @@ export default function StartupUxServices() {
                             alt="image"
                             width={308}
                             height={202}
+                            loading="eager"
                             quality={75}
                             priority
                           />
@@ -137,6 +141,7 @@ export default function StartupUxServices() {
                   alt="GirlImg"
                   width={115}
                   height={235}
+                  loading="eager"
                   quality={75}
                   priority
                 />

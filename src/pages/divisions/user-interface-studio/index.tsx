@@ -75,6 +75,7 @@ export default function UserExperienceStudio() {
                     // layout="fill"
                     width={500}
                     height={330}
+                    loading="eager"
                     className={styles.image}
                     quality={75}
                     priority
@@ -89,6 +90,7 @@ export default function UserExperienceStudio() {
                           alt="enterprise"
                           width={36}
                           height={36}
+                          loading="eager"
                         />
                         <h3>ENTERPRISE</h3>
                         <h3>UX SERVICES</h3>
@@ -123,6 +125,7 @@ export default function UserExperienceStudio() {
                         width={20}
                         height={20}
                         quality={75}
+                        loading="eager"
                         priority
                       />
                       <h3>STARTUP</h3>
@@ -144,6 +147,7 @@ export default function UserExperienceStudio() {
                 src={"/assets/images/userExperience-img-1.png"}
                 alt="UserExperienceImgOne"
                 width={195}
+                loading="eager"
                 height={243}
                 quality={75}
                 priority
@@ -162,6 +166,7 @@ export default function UserExperienceStudio() {
                 alt="UserExperienceImgTwo"
                 width={202}
                 height={227}
+                loading="eager"
                 quality={75}
                 priority
               />
@@ -176,6 +181,7 @@ export default function UserExperienceStudio() {
                       width={20}
                       height={20}
                       quality={75}
+                      loading="eager"
                       priority
                     />
                     <h3>ENTERPRISE</h3>
