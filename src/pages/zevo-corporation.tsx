@@ -31,6 +31,7 @@ const Zevocorporation = () => {
                       src={f.hero.image.src}
                       alt={f.hero.image.alt}
                       layout={"fill"}
+                      loading="eager"
                     />
                   </div>
                   <div className={styles.download_btn}>

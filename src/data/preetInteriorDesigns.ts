@@ -24,11 +24,11 @@ export const IFORTUNETTA: IData["data"][] = [
     path: "/fortunetta",
     hero: {
       image: {
-        src: "assets/icons/fortunetta-bg.svg",
+        src: "/assets/images/fortuneeta-bg.png",
         alt: "Fortunetta",
       },
       logo: {
-        src: "assets/icons/fortunetta-logo.svg",
+        src: "/assets/icons/fortunetta-logo.svg",
         alt: "Fortunetta",
       },
     },
@@ -40,7 +40,7 @@ export const IZEVO: IData["data"][] = [
     path: "/zero-corporation",
     hero: {
       image: {
-        src: "assets/icons/zevo-bg.svg",
+        src: "/assets/images/zevo-bg.png",
         alt: "zevo-bg",
       },
       logo: {
